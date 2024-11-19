@@ -9,6 +9,7 @@ git push -u origin 2025
 ```
 will push it to the branch named "2025" 
 This triggers Netlify to build and deploy that code, which is then reachable at 2025.ic2s2.org
+
 You can work off the **2023** branch as a template (https://github.com/iscss/ic2s2/tree/2023)
 
 
