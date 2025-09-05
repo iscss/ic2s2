@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>IC2S2'25 Norrköping</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Includes into the <head> tag -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/main.css" />
+
+<!-- Scripts -->
+<!--
+  NOTE: We have to `defer` all script loadings so that we can have them load
+  after the DOM has been loaded, but still keep them in the header (where they
+  belong).
+-->
+<script src="/assets/js/jquery.min.js" defer></script>
+<script src="/assets/js/jquery.dropotron.min.js" defer></script>
+<script src="/assets/js/browser.min.js" defer></script>
+<script src="/assets/js/breakpoints.min.js" defer></script>
+<script src="/assets/js/util.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+
+<!-- Include Conferia scripts -->
+<script defer src="https://cdn.jsdelivr.net/gh/nathanlesage/conferia@0.18.0/dist/conferia.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nathanlesage/conferia@0.18.0/dist/conferia.css">
+
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+      <!-- Header section -->
+<section
+  id="header"
+  class="wrapper"
+  
+  style="background: url('/images/ic2s2_2025_backdrop.png')"
+  
+>
+  <!-- Background video; the homepage video needs a reduced brightness -->
+  <!--
+    Attribute explainer:
+    * autplay: Video starts immediately with no user interaction
+    * playsinline: Required on iPhone to prevent the video from entering fullscreen while playing
+    * muted: Ensures iPhones play the video automatically because it doesn't have audio
+    * loop: Loop it infinitely
+    * style: Ensure the video covers the entire header's background always
+    cf.: https://webkit.org/blog/6784/new-video-policies-for-ios/
+  -->
+  <video
+    autoplay
+    playsinline
+    muted
+    loop
+    style="position: absolute; min-height: 100%; min-width: 100vw;"
+    
+      cover="/images/ic2s2_2025_backdrop.png"
+    
+  >
+    
+      <!-- Network video for other pages -->
+      <source src="/images/ic2s2_2025_backdrop.mp4" type="video/mp4" />
+      <source src="/images/ic2s2_2025_backdrop.webm" type="video/webm" />
+    
+  </video>
+  
+  <!-- Logo -->
+  <div id="logo">
+    
+    <h1>Submit Tutorial Proposal</h1>
+    
+  </div>
+
+  <!-- Navigation -->
+<nav id="nav">
+  <ul>
+    <li ><a href="/">Home</a></li>
+    
+    <li>
+      
+      <a href="#">Submit</a>
+      <ul>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/topics">Topics</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/submit-abstract">Call for Abstracts</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/submit-tutorial">Call for Tutorials</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#">Attend</a>
+      <ul>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/register">Register</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/venue">Venue</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/getting-there">Getting there</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/accommodation">Accommodation</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/childcare">Childcare</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/travel-grants">Travel Grants</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/conduct">Conduct</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/next-ic2s2">Next IC2S2</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#">Program</a>
+      <ul>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/awards">Awards</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/program">Program</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/keynotes">Keynotes</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.youtube.com/playlist?list=PLrDB6riLfdJQaATZksFnXsWflA2cea9We">Keynote Recordings</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/tutorials">Tutorials</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li>
+      
+        <a href="https://www.ic2s2-2025.org/organization">Organizers</a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#">About</a>
+      <ul>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/sponsors">Sponsors</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/sponsor-us">Sponsor our Conference</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://www.ic2s2-2025.org/about">Previous Editions</a>
+        </li>
+        
+          
+        <li
+          
+        >
+          <a href="https://iscss.org/">ISCSS</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+</section>
+
+
+			<!-- Main -->
+      <section id="main" class="wrapper style3">
+	<div class="title">Call for Tutorials</div>
+	<div class="container">
+		<div id="content">
+			<article class="box post">
+				<center>
+					<ul class="actions special">
+						<li>
+							
+							Submission is currently not available.
+							
+						</li>
+					</ul>
+				</center>
+
+				<p>&nbsp;</p><!-- Spacer -->
+
+				<div class="text-center">
+  
+  <ul style="list-style: none; font-weight: bold;">
+    
+    
+    
+      
+    
+    <li style="text-decoration: line-through; margin: 10px auto">
+      
+      <s>Tutorial proposal submission deadline: January 17, 2025</s>
+      
+    </li>
+    
+    
+    
+      
+    
+    <li style="text-decoration: line-through; margin: 10px auto">
+      
+      <s>Notification of tutorial acceptance: January 31, 2025</s>
+      
+    </li>
+    
+    
+    
+      
+        
+    
+    
+      
+        
+    
+    
+      
+        
+    
+    
+      
+    
+    <li style="text-decoration: line-through; margin: 10px auto">
+      
+      <s>Tutorial day: July 21, 2025</s>
+      
+    </li>
+    
+    
+    
+      
+        
+  </ul>
+</div>
+
+
+				<h6>Call for tutorials</h6>
+
+				<p>
+					The International Conference on Computational Social Science (IC2S2) is the premier conference bringing together researchers from different disciplines interested in using computational and data-intensive methods to solve problems relevant to society. IC2S2 hosts academics and practitioners in computational science, complexity, network science, and social science, and provides a platform for new research in the field of computational social science.
+				</p>
+
+				<h6>Submission Instructions</h6>
+
+				<p>
+					Submissions for Tutorial proposals should be formatted according to the official
+					<a href="/files/ic2s2_2025_latex_template_tutorials.zip">LaTeX</a> or
+					<a href="/files/ic2s2_2025_word_template_tutorials.docx">MS Word</a>
+					template and should be no more than
+					<strong>three pages</strong> in length. The submission file must be submitted in PDF format and should be no larger than
+					20MB. Proposals should contain the following:
+				</p>
+
+				<ul>
+					<li><strong>Title</strong></li>
+					<li><strong>Presenters / organizers:</strong> Please provide names, affiliations, email addresses, and short bios (up to 200 words) for each presenter. Bios should cover the presenters' expertise related to the topic of the tutorial. If there are multiple presenters, please describe how the time will be divided between them.</li>
+					<li><strong>Topic:</strong> An abstract describing the topic (up to 300 words)</li>
+					<li><strong>Rationale:</strong> What is the objective / learning outcome of the tutorial? What is the benefit
+						for the
+						attendees? Why is this tutorial important to the IC2S2 community?</li>
+					<li><strong>Format:</strong> A description of the proposed event format and a list of proposed activities,
+						with a
+						description of the hands-on component (tools, packages, methods etc). We encourage organizers to specify any
+						technique that they can offer to broaden the accessibility of the content (e.g., closed captioning of
+						slides).</li>
+					<li><strong>Equipment:</strong> A short note on equipment or features required for the tutorial.</li>
+					<li><strong>Audience:</strong> A short statement about the expected target audience. What prior knowledge, if
+						any, do
+						you expect from the audience?</li>
+					<li><strong>Proposed length:</strong> please choose from 3 hours (full session) or 6 hours (full day). If you
+						are
+						flexible, please indicate in the outline which parts will be included in the short/long versions.</li>
+					<li><strong>Preferred time slot:</strong> Please indicate your preference for the morning slot (from 9.15am)
+						or the
+						afternoon slot (from 1:45pm)</li>
+					<li><strong>Number of participants:</strong> Please specify the maximum number of participants that could
+						reasonably
+						attend and be instructed by the organizers.</li>
+					<li><strong>Previous tutorials:</strong> Has the tutorial been presented previously? If so, specify the
+						previous venues
+						and years in which the event was held, and provide either a short description or a link to the websites of
+						the previous editions.</li>
+				</ul>
+
+				<p>
+					The aim with tutorials is that participants can take home knowledge and skills on methods that they can apply
+					to their own research. <strong>Priority will be given to tutorials that include hands-on and active learning
+						components</strong>. Tutorials should be comprehensive and should not focus only on the presenter’s previous
+					work. We also welcome proposals for tutorials on "disciplinary state of the art sessions" that give a focused
+					overview on the latest developments, trends and perspectives in a specific discipline or research area and any
+					other topics at the intersection of the social sciences, computer science and/or statistics. Tutorials should
+					be of interest to a substantial portion of the community and should represent a sufficiently mature area of
+					research or practice. A regular tutorial slot is 3 hours long. However, we are also accepting proposals for
+					full-day tutorials (6 hours). <em>The full conference registration fee will be waived for one organizer per
+						tutorial.</em>
+				</p>
+
+				<h5>Topics</h5>
+				<p>
+					Every year, IC2S2 hosts experts from a variety of fields to collaborate and share knowledge. We are calling for proposals of tutorials that address methods, skills and tools useful to conduct research in computational social science influding but not limited to the following topics:
+				</p>
+
+				<ul>
+					<li>Methods and issues of data collection</li>
+					<li>Text mining approaches for social science research</li>
+					<li>Image and video analyses for social science research</li>
+					<li>New advances in social network and behavioral data analysis</li>
+					<li>Application of large language models in CSS research</li>
+					<li>Visual communication and data visualizations</li>
+					<li>Using sensors for studying behavior</li>
+					<li>Combining digital trace data and additional data (e.g., surveys)</li>
+					<li>Assessing biases in data collection</li>
+					<li>Best practices for working with online communities (including crowdsourcing and participants recruitment)</li>
+					<li>Legal and ethical dimensions of CSS research</li>
+					<li>Innovative mixed methods for research on socio-technical systems</li>
+					<li>Reproducibility in CSS research</li>
+					<li>Experimental design and development in CSS</li>
+					<li>Research Design and Causal Inference</li>
+					<li>Generative AI applications in social science research</li>
+					<li>Empirically calibrated simulations for social science research</li>
+					<li>Innovative approaches for integrative modeling that combines prediction and explanation</li>
+					<li>Geospatial data integration and scalable urban analytics</li>
+				</ul>
+
+				<h5>Enquiries</h5>
+				<p>
+					For any questions regarding tutorial submissions, please write to:
+					<a href="mailto:ic2s2-2025@liu.se">ic2s2-2025@liu.se</a>
+				</p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section id="highlights" class="wrapper style2">
+	<div class="title">
+		<h6 id="augmented">Past Tutorials</h6>
+		</div>
+		<div class="container">
+		
+			<div class="row aln-left">
+				<h5>Making Models We Can Understand: An Interactive Introduction to Interpretable Machine Learning</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Chudi Zhong</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Alina Jade Barnett</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Harsh Parikh</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>In many areas of social science, we would like to use machine learning models to make better decisions. However, many machine learning models are opaque or “black-box,” meaning that they do not explain their predictions in a way that humans can understand. This lack of transparency is problematic, leading to questions of possible model biases, and unclear accountability for incorrect decisions. Interpretable or “glass box” machine learning models give insight into model decisions and can be used to create more fair and accurate models. Interpretability in machine learning is crucial for high stakes decisions and troubleshooting. Interpretable machine learning started as far back as the 1970’s, but has gained momentum as a subfield only very recently. We will overview recent research in the area, provide fundamental principles for interpretable machine learning, and provide hands-on activities highlighting the use of the techniques on real world data. This tutorial will introduce the frontier of interpretable machine learning, and equip researchers and scientists with the knowledge and skills to apply interpretable machine learning in their research tasks for effective data analysis and responsible decision-making.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>New Approaches and Data Sources to Study Digital Media and Democracy</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Sebastian Stier</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Philipp Lorenz-Spreen</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Lisa Oswald</strong>
+							
+						</li>
+					
+						<li>
+							<strong>David Lazer</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>As we head into a crucial election year in the U.S. and Europe, political forces like populist and radical parties or movements or authoritarian governments abroad and societal processes such as polarization or declining trust in parliaments pose threats to the legitimacy of democratic institutions. Academic research on the role of digital media in shaping these processes and democracy at-large is striving. Nonetheless, our research areas and analysis potential are oftentimes confined to the data provided by platforms. For democracy research in particular, it is important to link digital behavioral data with individual-level information on demographics and variables like party identification, political trust or evaluations of other societal groups. While getting individual-level data has been an important issue ever since, platforms have restricted data access further. As potential remedies provided by the EU’s Digital Services Act are not yet foreseeable, researchers have to devise their own solutions for collecting relevant digital behavioral data in the “Post-API Age”. In many academic institutions, research software for data collection like web tracking via browser add-ons, mobile apps or data donations are being developed. Currently, there is the risk that these initiatives remain unconnected and work is duplicated. The workshop aims to bring together research groups working on new technical solutions and innovative approaches for studying digital democracy.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>Exploring Emerging Social Media: Acquiring, Processing, and Visualizing Data with Python and OSoMe Web Tools</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Filipi Nascimento Silva</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Kaicheng Yang</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Bao Tran Truong</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Wanying Zhao</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>In the digital age, social media platforms have become crucial for societal interaction and communication. Computational social science, especially social media research, has shed light on crucial insights such as detecting bots, identifying suspicious activities, and uncovering narratives. Underlying these findings is the combination of large-scale data and network science techniques that reveal user connectivity and interactions.
+
+There have been significant shifts in the landscape of computational social science research in recent years. New restrictions on data access policies of widely used platforms pose significant challenges to the types of research that can be conducted. On the other hand, emerging platforms that offer open data access, like Bluesky and Mastodon, have seen a surge in popularity, opening opportunities for investigation. Additionally, the rapid development of large language models (LLMs) provides new insights to represent and understand published content. The Observatory on Social Media (OSoMe) addresses these challenges and opportunities by focusing on developing data acquisition tools for emergent platforms, providing historical datasets, and synthetic data, and developing novel data analysis tools and techniques.
+
+This tutorial aims to guide participants through these new developments, highlighting the current approaches for accessing social media data, including the use of OSoMe's infrastructure to acquire social media data or generate data from a model of a social media platform, and methodologies to understand this data. Attendees will learn to build various network types, extending beyond traditional interactions like replies and re-posts to include co-post and co-hashtag networks, enabling diverse data representations for different research needs. The tutorial will cover network science techniques, including basic network features, centrality measures, and community detection, along with techniques for building and analyzing text-based embeddings, such as those generated by the Sentence-BERT method. The tutorial will also cover techniques to extract narratives and attribute content-aware labels to communities.
+
+Moreover, participants will be guided through advanced visualization tools like Helios-Web, be conducted in Python and utilize Jupyter notebooks preloaded with datasets and scripts. These materials will be open-source and available on GitHub, providing participants with a toolkit to kickstart or advance their social media research endeavors.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>Collecting Digital Trace Data Through Data Donation</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Laura Boeschoten</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Niek de Schipper</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>Researchers from the IC2S2 community often struggle with the lack of access to data about online behavior. This challenge is even more pressing now that several APIs are closing. At the same time, in our everyday lives, we as individuals leave more and more digital traces behind on digital platforms: for example, by liking a post on Instagram or sending a message via WhatsApp; when we tap our electronic card on public transportation or complete an online banking transaction. The promise of digital humanities and computational social science is that researchers can utilize these digital traces to study human behavior and social interaction at an unprecedented level of detail. In summary, while the amount of digital trace data increases, most are closed off in proprietary archives of commercial corporations, with only a subset being available to a small set of researchers at a platform’s discretion, or through increasingly restricted and opaque APIs.
+
+This tutorial helps IC2S2 researchers understand and deploy an alternative to circumvent these challenges. This alternative approach to gain access to digital traces is enabled thanks to the GDPR’s right to data access and data portability and similar legislation in other countries. As a result, all data processing entities are required to provide citizens a digital copy of their personal data upon request in electronic form. We refer to these pieces of personal data as Data Download Packages (DDPs). This legislation allows researchers to invite participants to share their DDPs. A major challenge is, however, that DDPs potentially contain very sensitive data. Conversely, often not all data is needed to answer the specific research question. To tackle these challenges, an alternative workflow has been developed: First, the participant requests their personal DDP at the platform of interest. Second, they download it onto their own personal device. Third, by means of local processing, only the features of interest to the researcher are extracted from that DDP. Fourth, the participant inspects the extracted features after which they can choose what they want to donate (or decline to donate). Only after selecting the data for donation and clicking the button ‘donate’, the donated data is sent to a storage location and can be accessed by the researcher and be used for further analysis.
+
+After having participated in this tutorial, attendees will know what designing a data donation study entails and what important aspects should be considered. Attendees will learn about the different types of study designs in which data donation can be incorporated. Furthermore, attendees will learn how to configure their own data donation study using the open-source software Port and how to write their own Python scripts used for the extraction of digital trace data.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Jae Yeon Kim</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Tiago Ventura</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Aniket Kesari</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Sono Shah</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Tina Law</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Subhik Barari</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Sarah Shugars</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>Social scientists with data science skills are increasingly assuming positions as computational social scientists in academic and non-academic organizations. However, as computational social science (CSS) is still relatively new to the social sciences, CSS can feel like a hidden curriculum for many Ph.D. students. To support social science Ph.D. students, we provide an accessible tutorial for CSS training based on our collective working experiences in academic, public, and private sector organizations. We argue that students should supplement their traditional social science training in research design and domain expertise with CSS training, focused on three core areas: (1) learning data science skills; (2) building a portfolio that uses data science to answer social science questions; and (3) connecting with computational social scientists. We conclude with some practical recommendations for departments and professional associations to better support Ph.D. students.
+
+The paper form of this tutorial was published in PS: Political Science and Politics, the American Political Science Association’s professionalization journal, and has been viewed 2,317 times and downloaded 584 times since August 2023 (as of December 23, 2023).
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>Using LLMs for Computational Social Science</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Diyi Yang</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Caleb Ziems</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Niklas Stoehr</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>Our tutorial will guide participants through the practical aspects and hands-on experiences of using Large Language Models (LLMs) in Computational Social Science (CSS). In recent years, LLMs have emerged as powerful tools capable of executing a variety of language processing tasks in a zero-shot manner, without the need for task-specific training data. This capability presents a significant opportunity for the field of CSS, particularly in classifying complex social phenomena such as persuasiveness and political ideology, as well coding or explaining new social science constructs that are latent in text. This tutorial provides an in- depth overview on how LLMs can be used to enhance CSS research. First, we will provide a set of best practices for prompting LLMs, an essential skill for effectively harnessing their capabilities in a zero-shot context. This step of the talk assumes no prior background. We will explain how to select an appropriate model for the task, and how factors like model size and task complexity can help researchers anticipate model performance. To this end, we introduce an extensive evaluation pipeline, meticulously designed to assess the performance of different language models across diverse CSS benchmarks. By covering these results, we will show how CSS research can be broadened to a wider range of hypotheses than prior tools and data resources could support. Second, we will discuss some of the limitations with prompting as a methodology for certain measurement scales and data types, including ordinal data, and continuous distributions. This part will look more “under the hood” of a language model to outline challenges around decoding numeric tokens, probing model activations as well as intervening on model parameters. By the end of this session, attendees will be equipped with the knowledge and skills to effectively integrate LLMs into their CSS research. 
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>Thinking With Deep Learning: An Exposition Of Deep (Representation) Learning for Social Science Research</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>James Evans</strong>
+							
+						</li>
+					
+						<li>
+							<strong>Bhargav Srinivasa Desikan</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>A deluge of digital content is generated daily by web-based platforms and sensors that capture digital traces of communication and connection, and complex states of society, the economy, the human mind, and the physical world. Emerging deep learning methods enable the integration and analysis of these complex data in order to address research and real-world problems by designing and discovering successful solutions. Our tutorial serves as a companion to our book, “Thinking with Deep Learning”. This book takes the position that the real power of deep learning is unleashed by thinking with deep learning to reformulate and solve problems traditional machine learning methods cannot address. These include fusing diverse data like text, images, tabular and network data into integrated and comprehensive “digital doubles” of the subjects and scenarios you want to model, the generation of promising recommendations, and the creation of AI assistants to radically augment an analyst or system’s intelligence. For scientists, social scientists, humanists, and other researchers who seek to understand their subjects more deeply, deep learned representations facilitate the opportunity to not only predict and simulate them but also to provide novel insights, associations, and understanding available for analysis and reuse. \n The tutorial will walk attendees through various non-nerual representations of social text, image and network data, and the various distance metrics we can use to measure between these representations. We then move on to introducing to neural models and their use in modern science and computing, with a focus on social sciences. After introducing neural architectures, we will explore how they are used with various multi-modal social data, and how their power can be unleashed with integrating and aligning these representations.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>Active Agents: An Active Inference Approach to Agent-Based Modeling in the Social Sciences</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Andrew Pashea</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>This tutorial will teach attendees about Active Inference as an agent-based modeling framework and its application to computational social science. Active Inference is an integration of neuroscience and cognitive science which builds a normative theory for biological and thus also social and cultural phenomena, with empirical validation at a neuronal level. Recent application topics as related to, e.g., economics, psychology and sociology, include multi-armed bandit models, cooperative action, approach-avoid behavior, and confirmation bias. Active Inference’s novelty lies in its integration of perception, “changing one’s mind,” with action, “changing the world,” via free energy minimization as a single cost function. This overcomes the ‘passive’ approach of recent generative AI (ex. LLMs) to learning and data generation and further allows agents to balance exploration (acting to seek information) with exploitation (acting to realize one’s preferences) as a novel approach to the exploration-exploitation social science debate. This framework can be adapted to both single- and multi-agent settings, and running simulations of these agents and viewing their modifiable and interpretable parameters allows for deriving insights about their actions, beliefs, and outcomes over time. After a primer on Active Inference, this tutorial teaches attendees how to copy and adapt an open-source Python script (which can be run within or downloaded from Google Colab in-browser) for their own experimental simulations which can be shared for experimental reproducibility and, depending on the experiment, fit to real empirical data.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+			<div class="row aln-left">
+				<h5>The Dark Web: Harnessing the Platform for Social Science Research</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					
+						<li>
+							<strong>Brady Lund</strong>
+							
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>The dark web remains mysterious, with many struggling to comprehend its nature. While some perceive it as a breeding ground for crime and injustice, others view it as an essential resource for individuals worldwide facing censorship, bigotry, and oppression. Opinions on the technology are divisive, yet it undeniably exists and is utilized by millions daily. Embraced by a spectrum of users, from cybercriminals to political dissidents to ordinary suburban parents, this platform offers a fascinating arena for studying diverse human behaviors and exploring the intricate intersections of core ethics and values. \n This workshop aims to provide participants with an understanding of the dark web—its functioning and how to access it. It will delve into the ethical and legal considerations surrounding the dark web, offering a rich terrain for research. The session will also showcase various techniques for conducting such research. By the end of the tutorial, participants will possess the knowledge and skills required to engage with the dark web as a platform for their own research endeavors.
+</p>
+				</div>
+			</div>
+			<hr>
+		
+		</div>
+</section>
+
+
+      <!-- Page Footer -->
+<footer class="wrapper">
+  <div class="title">Stay in touch</div>
+  <div class="container">
+    <section class="feature-list small">
+      <div class="row">
+        <div class="col-4 col-12-small">
+          <section>
+            <h3 class="icon solid fa-home">Address</h3>
+            <p id="footer-address">
+              
+                <a href="https://liu.se/en/research/swecss">Swedish Excellence Center for Computational Social Science</a><br />
+              
+                <br />
+              
+                <a href="https://liu.se/en/organisation/liu/iei/ias">Institute for Analytical Sociology</a><br />
+              
+                <br />
+              
+                Linköping University<br />
+              
+                Norrköping, Sweden<br />
+              
+            </p>
+          </section>
+        </div>
+
+        <div class="col-4 col-12-small">
+          <section>
+            
+              <h3 class="icon solid fa-comment">Social</h3>
+              <p>
+                
+                <a href="https://bsky.app/profile/ic2s2.bsky.social">Bluesky</a><br />
+                
+              </p>
+            
+          </section>
+        </div>
+
+        <div class="col-4 col-12-small">
+          <section>
+            <h3 class="icon solid fa-envelope">Email</h3>
+            <p>
+              <a href="mailto:ic2s2-2025@liu.se">
+                ic2s2-2025@liu.se
+              </a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+		</div>
+	</body>
+</html>
