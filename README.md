@@ -81,12 +81,11 @@ The rest of this document covers how the site template itself works so you know 
 ## The Site Template
 
 > The site template and the documentation below were originally created by
-> [Hendrik Erz](https://www.hendrik-erz.de/) (hendrik.erz@liu.se) for IC2S2
-> 2025 in Norrköping. Hendrik decoupled the layout from the data so that adding
-> and modifying conference information is much quicker, and the site can be
-> passed from year to year more easily. The original unmodified manual is also
-> available at [MANUAL.md](./MANUAL.md). Thank you, Hendrik, for the excellent
-> work!
+> Hendrik Erz for IC2S2 2025 in Norrköping. Hendrik decoupled the layout from
+> the data so that adding and modifying conference information is much quicker,
+> and the site can be passed from year to year more easily. The original
+> unmodified manual is also available at [MANUAL.md](./MANUAL.md). Thank you,
+> Hendrik, for the excellent work!
 
 > [!NOTE]
 > This website is intended as a living document and to be improved over time! If
@@ -366,5 +365,5 @@ We've been replacing redirects with actual archived site content so everything i
 **Can I preview before going live?**
 You can serve locally with Jekyll (`bundle exec jekyll serve`) or push to the branch — the site deploys within minutes and you can check it at `YEAR.ic2s2.net`.
 
-**Questions about the site template?**
-Reach out to Hendrik Erz at hendrik.erz@liu.se or via [hendrik-erz.de](https://www.hendrik-erz.de/). The original unmodified manual is at [MANUAL.md](./MANUAL.md).
+**Where can I learn more about the site template?**
+See [MANUAL.md](./MANUAL.md) for the original detailed manual written by Hendrik Erz for IC2S2 2025.
