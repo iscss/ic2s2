@@ -61,6 +61,8 @@ git remote remove incoming
 
 To pull updates later, repeat the same steps — it will overwrite the branch content with the latest from the external repo.
 
+**After pulling, test the build before pushing** (see "Testing the Build" below).
+
 ---
 
 ## For New Conference Organizers (Step-by-Step)
@@ -120,6 +122,45 @@ git push origin 2026
 ```
 
 That's the whole deployment workflow. Edit, commit, push — the site updates automatically.
+
+### Testing the Build
+
+Before pushing, verify the site builds correctly. This catches dependency issues that would cause Netlify to fail.
+
+Make sure you have Ruby and Bundler installed, then:
+
+```sh
+bundle install
+bundle exec jekyll build
+```
+
+If `bundle install` fails, read the error message — it usually tells you what's missing. A common fix is adding the missing gem to your `Gemfile`. For example, if you see an error about `rake` not being found:
+
+```sh
+# Add the missing gem to Gemfile
+echo 'gem "rake"' >> Gemfile
+
+# Re-run
+bundle install
+bundle exec jekyll build
+```
+
+If `jekyll build` succeeds, the site will work on Netlify. If you also want to preview it:
+
+```sh
+bundle exec jekyll serve
+# open http://localhost:4000
+```
+
+### Troubleshooting
+
+**Netlify build fails with a gem/dependency error**
+
+Netlify builds in a clean environment — it only has what's in your `Gemfile`. If a gem works on your machine but fails on Netlify, it's likely installed system-wide on your machine but not listed in the `Gemfile`. Fix: add the missing gem to `Gemfile`, run `bundle install` to update `Gemfile.lock`, commit both files.
+
+**`bundle install` fails locally**
+
+Make sure you have Ruby installed. On macOS: `brew install ruby`. Then: `gem install bundler`. Then retry `bundle install`.
 
 The rest of this document covers how the site template itself works so you know what to edit.
 
