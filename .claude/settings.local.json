@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:2023.ic2s2.net)",
-      "WebFetch(domain:2025.ic2s2.net)"
-    ]
-  }
-}
