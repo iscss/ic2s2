@@ -11,7 +11,7 @@ permalink: pretty
 # Global variables, can be accessed using the `site` variable.
 
 # Set this to the domain that the website will be served on.
-url: https://ic2s2-2026.org
+url: https://2026.ic2s2.net
 # Primary page title (displayed on the browser tab, not the headers)
 title: "IC2S2'26 Burlington"
 # Location tag (main page)
