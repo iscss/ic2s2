@@ -25,14 +25,14 @@
     loop
     style="position: absolute; min-height: 100%; min-width: 100vw;{% if page.url == '/' %} filter: brightness(65%);{% endif %}"
     {% if page.url == '/' %}
-      cover="/images/ic2s2_2026_Teaser_Burly.mov"
+      cover="/images/ic2s2_2026_Teaser_Burly.mp4"
     {% else %}
-      cover="/images/ic2s2_2026_Teaser_Burly.mov"
+      cover="/images/ic2s2_2026_Teaser_Burly.mp4"
     {% endif %}
   >
     {% if page.url == '/' %}
       <!-- Drone video for homepage -->
-      <source src="/images/ic2s2_2026_Teaser_Burly.mov" type="video/mp4" />
+      <source src="/images/ic2s2_2026_Teaser_Burly.mp4" type="video/mp4" />
       {% else %}
       <!-- Network video for other pages -->
       <source src="/images/ic2s2_2026_backdrop.webm" type="video/webm" />

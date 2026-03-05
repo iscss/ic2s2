@@ -14,4 +14,7 @@ vendor/
 *mp4
 *mov
 *webm
+# Allow committed header videos
+!images/ic2s2_2026_Teaser_Burly.mp4
+!images/ic2s2_2026_backdrop.webm
 .claude/
