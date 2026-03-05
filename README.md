@@ -16,6 +16,53 @@ This repo hosts all IC2S2 conference websites in one place. Each year gets its o
 
 ---
 
+## For ISCSS Admin
+
+### Granting repo access to conference organizers
+
+Add the current year's organizers as collaborators so they can push to their year's branch:
+
+1. Go to **Settings → Collaborators** (or **Settings → Collaborators and teams** if using an org) at https://github.com/iscss/ic2s2/settings/access
+2. Click **Add people** (or **Add teams**)
+3. Enter the organizer's GitHub username and invite them
+4. Set their role to **Write** (allows pushing but not admin actions)
+
+To protect other branches from accidental pushes, set up branch protection rules:
+
+1. Go to **Settings → Branches → Add branch protection rule**
+2. Set the branch name pattern to `main` and enable protections (e.g., require pull request reviews)
+3. Repeat for any other branches you want to protect (e.g., `2025`, `2024`, etc.)
+
+This way organizers can push freely to their year's branch but can't accidentally modify other branches.
+
+### Pulling from an external repo into a year branch
+
+If the conference organizers built their site in a separate repo (e.g., `Vermont-Complex-Systems/ic2s2-2026`), pull it into the year branch here:
+
+```sh
+git checkout 2026
+
+# Add the external repo as a temporary remote
+git remote add incoming https://github.com/Vermont-Complex-Systems/ic2s2-2026.git
+git fetch incoming
+
+# Replace the branch content with the external repo's site
+git rm -rf .
+git checkout incoming/main -- .
+
+# Commit and push
+git add -A
+git commit -m "Pull 2026 conference site from external repo"
+git push origin 2026
+
+# Clean up the temporary remote
+git remote remove incoming
+```
+
+To pull updates later, repeat the same steps — it will overwrite the branch content with the latest from the external repo.
+
+---
+
 ## For New Conference Organizers (Step-by-Step)
 
 Using 2026 as an example.
