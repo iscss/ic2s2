@@ -1,0 +1,87 @@
+# IC2S2 CONFERENCES JEKYLL MASTER CONFIGURATION
+#
+# This file contains the main configuration to successfully run Jekyll over the
+# source code to generate a website. We have documented all potential settings
+# of interest for you here, but for a more comprehensive guide on how to use
+# this template, please refer to the file MANUAL.md.
+
+# Enable pretty links: turns /subpage.html into /subpage/
+permalink: pretty
+
+# Global variables, can be accessed using the `site` variable.
+
+# Set this to the domain that the website will be served on.
+url: https://ic2s2-2026.org
+# Primary page title (displayed on the browser tab, not the headers)
+title: "IC2S2'26 Burlington"
+# Location tag (main page)
+location: "Burlington 2026"
+# Locale, should probably be kept as is
+locale: en-US
+# Support emails
+emails:
+  general: "IC2S2@uvm.edu" # General inquiries email
+  accommodation: "IC2S2@uvm.edu" # For hotel bookings etc.
+  childcare: "IC2S2@uvm.edu" # For childcare related questions
+  visa: "IC2S2@uvm.edu" # Visa related questions
+  awareness: "awareness-ic2s2@proton.me" # Awareness contact email during the event
+
+# Post address for the conference
+address: # Each list item becomes its own line. Add as many as needed
+- "<a href=\"https://vermontcomplexsystems.org/\">Vermont Complex Systems Institute</a>"
+- "" # Empty line
+- "<a href=\"https://www.uvm.edu/\">University of Vermont</a>"
+- "" # Empty line
+- "Burlington, Vermont"
+- "USA"
+# The label to show on the "Sponsor us" button
+sponsor_button_label: "Become a sponsor of IC²S² at UVM"
+
+# Any line here is a page that will NOT be included in the final output. If a
+# line is commented out (that is, there is a pound-symbol (#) in front of it),
+# this means the page will be included in the output. If there is no #-symbol,
+# the page will be excluded, that is, cannot be found on the website. Once you
+# start working on a new website, most of these lines should be un-commented,
+# and once the conference approaches, all should be commented.
+exclude:
+#- about.html
+#- keynotes.html
+#- childcare.html
+#- accommodation.html
+#- conduct.html
+#- travel-grants.html
+#- organization.html
+#- program.html
+#- awards.html
+#- next-ic2s2.html
+#- register.html
+#- sponsor-us.html
+#- sponsors.html
+#- submit-abstract.html
+#- submit-tutorial.html
+#- getting-there.html
+#- topics.html
+#- tutorials.html
+#- venue.html
+################################################################################
+# Do not touch the following two entries: Commenting them out means that the
+# manual or readme will be accessible via, e.g., ic2s2-2025.org/MANUAL.md. We
+# don't want that. NOTE that you should add any other Markdown or HTML files
+# which you create but which you do not want in the output. NOT EXCLUDING
+# INTERNAL FILES MAY INTRODUCE SECURITY RISKS!
+- MANUAL.md
+- README.md
+- CLAUDE.md
+
+# Set Front matter default variables, which can be overridden on a case-by-case
+# basis.
+defaults:
+  - scope:
+      path: "" # No path scope -> every page
+    values:
+      layout: default
+
+# Do not change the plugins unless you know you need to.
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

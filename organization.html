@@ -1,0 +1,51 @@
+---
+title: "General & Conference Chairs"
+---
+
+<!-- General Chairs -->
+{% for group in site.data.people %}
+  {% comment  %} Skip empty groups {% endcomment %}
+  {% unless group.people %}
+    {% continue %}
+  {% endunless %}
+
+  {% capture wrapper_style %}{% cycle 'style1', 'style2', 'style3' %}{% endcapture %}
+<section id="{{ group.title | slugify }}" class="wrapper {{ wrapper_style }}">
+  <div class="title">{{ group.title }}</div>
+  <div class="container">
+    <div class="row aln-center">
+    {% for person in group.people %}
+      <div class="col-3 col-6-medium">
+        <a href="{{ person.url }}" class="image featured">
+          <img src="{{ person.image }}" alt="Image of {{ person.name }}" style="aspect-ratio: 1; object-fit: cover; width: 100%;"/>
+        </a>
+        <center>
+          <h3>
+            <a href="{{ person.url }}">{{ person.name }}</a>
+          </h3>
+          <p>
+            {{ person.affiliation }}<br>
+            <span class="text-muted">{{ person.field }}</span>
+          </p>
+        </center>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{% comment %} {% if site.data.people.reviewers.people %}
+<!-- Active Reviewers -->
+<!-- TODO -->
+  <div class="container">
+    <p>
+      We would like to thank the following program committed members who reviewed five or more submissions:
+    </p>
+    <ul>
+      {% for person in site.data.people.reviewers.people %}
+      <li>{{ person }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %} {% endcomment %}

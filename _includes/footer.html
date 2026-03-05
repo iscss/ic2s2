@@ -1,0 +1,44 @@
+<!-- Page Footer -->
+<footer class="wrapper">
+  <div class="title">Stay in touch</div>
+  <div class="container">
+    <section class="feature-list small">
+      <div class="row">
+        <div class="col-4 col-12-small">
+          <section>
+            <h3 class="icon solid fa-home">Address</h3>
+            <p id="footer-address">
+              {% for line in site.address %}
+                {{ line }}<br />
+              {% endfor %}
+            </p>
+          </section>
+        </div>
+
+        <div class="col-4 col-12-small">
+          <section>
+            {% if site.data.social_media.show %}
+              <h3 class="icon solid fa-comment">Social</h3>
+              <p>
+                {% for social_media in site.data.social_media.links %}
+                <a href="{{ social_media.link }}">{{ social_media.title }}</a><br />
+                {% endfor %}
+              </p>
+            {% endif %}
+          </section>
+        </div>
+
+        <div class="col-4 col-12-small">
+          <section>
+            <h3 class="icon solid fa-envelope">Email</h3>
+            <p>
+              <a href="mailto:{{ site.emails.general }}">
+                {{ site.emails.general }}
+              </a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>

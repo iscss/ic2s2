@@ -1,34 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IC2S2 2026</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-        }
-        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        p { font-size: 1.1rem; color: #666; }
-        a { color: #0066cc; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>IC2S2 2026</h1>
-        <p>Details coming soon.</p>
-        <p><a href="https://ic2s2.net">ic2s2.net</a></p>
+---
+title: About
+---
+
+<section id="main" class="wrapper style3">
+  <div class="container">
+    <div class="title">{{ page.title }}</div>
+
+    <header class="style1">
+      <h2>
+        12<sup>th</sup> International Conference on Computational Social Science
+      </h2>
+      <p>Burlington, Vermont | July 28-31, 2026</p>
+    </header>
+
+    <!-- Image -->
+    <div class="image featured">
+      <img src="/images/venue/uvm_campus.webp" alt="Waterman" style="aspect-ratio: 2.5; object-fit: cover;" />
     </div>
-</body>
-</html>
+
+    <hr />
+
+    {%  include dates.html %}
+
+    <header class="style1">
+      <center>
+        <ul class="actions special">
+          {% if site.data.submission.call4abstracts_open and site.data.submission.call4abstracts_link %}
+          <li>
+            <a href="/submit-abstract" class="button style1 large"
+              >Submit Abstract</a
+            >
+          </li>
+          {% endif %}
+          {% if site.data.submission.call4tutorials_open and site.data.submission.call4tutorials_link %}
+          <li>
+            <a href="/submit-tutorial" class="button style3 large"
+              >Submit Tutorial</a
+            >
+          </li>
+          {% endif %}
+        </ul>
+      </center>
+    </header>
+
+    <hr />
+
+		<header class="style1">
+			<h5>
+        <center>
+          About the Conference: IC<sup>2</sup>S<sup>2</sup>
+          </center>
+      </h5>
+		</header>
+
+    <div id="content">
+      <article class="box post">
+        <p class="style1">
+          The International Conference for Computational Social Science (IC2S2)
+          will be hosted by the
+          <a href="https://vermontcomplexsystems.org/">Vermont Complex Systems Institute</a>
+          at the
+          <a href="https://www.uvm.edu/">University of Vermont</a>
+          in Burlington, Vermont from July 28-31, 2026.
+          IC2S2 has emerged as the dominant conference at the intersection of
+          social and computational science, bringing together researchers from
+          around the world in sociology, economics, political science,
+          psychology, cognitive science, management, computer science,
+          statistics and the full range of natural and applied sciences
+          committed to understanding the social world through large-scale data
+          and computation. IC2S2 is the annual conference of the
+          <a href="https://iscss.org/">
+            International Society for Computational Social Science.
+          </a>
+        </p>
+
+        <p>
+          The full-scale three-day conference (July 29-31) will feature research
+          and researchers from around the world, across a broad range of
+          relevant fields, and working on all areas of computational social
+          science to advance its many frontiers. July 28 will be reserved for
+          workshops and tutorials particularly targeted at early-career scholars.
+        </p>
+
+        <p>
+          The IC2S2 community actively balances and maintains a conversation
+          between social and computational scientists which integrates
+          technological advances and opportunities with social scientific rigor
+          and insight.
+        </p>
+      </article>
+    </div>
+
+    <hr />
+
+    <!-- Sponsors -->
+    {% include sponsors.html %}
+  </div>
+</section>

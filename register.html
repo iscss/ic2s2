@@ -1,0 +1,115 @@
+---
+title: Register
+---
+
+<section id="main" class="wrapper style3">
+	<div class="title">Registration</div>
+	<div class="container">
+
+		<div id="content">
+			<article class="box post">
+				<div class="row aln-center">
+					<div class="col-6 col-12-medium">
+
+						<table class="prices">
+							<tr>
+								<th></th>
+								<th><strong style="color:#ffffff">Early bird</s></strong><br />(until {{
+									site.data.registration.early_bird.deadline }})</s></th>
+								<th><b style="color:#ffffff">Standard</b><br />(after {{ site.data.registration.early_bird.deadline }})
+								</th>
+							</tr>
+							<tr>
+								<td><strong>Student</strong></td>
+								<td>
+									{{ site.data.registration.early_bird.student }} {{ site.data.registration.currency_code }}
+								</td>
+								<td>{{ site.data.registration.regular.student }} {{ site.data.registration.currency_code }}</td>
+							</tr>
+							<tr>
+								<td><strong>Regular</strong></td>
+								<td>
+									{{ site.data.registration.early_bird.regular }} {{ site.data.registration.currency_code }}
+								</td>
+								<td>
+									{{ site.data.registration.regular.regular }} {{ site.data.registration.currency_code }}
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Tutorials</strong></td>
+								<td>
+									{{ site.data.registration.early_bird.tutorials }} {{ site.data.registration.currency_code }}
+								</td>
+								<td>
+									{{ site.data.registration.regular.tutorials }} {{ site.data.registration.currency_code }}
+								</td>
+							</tr>
+							{% if site.data.registration.conference_dinner %}
+							<tr>
+								<td><strong>Conference&nbsp;Dinner</strong></td>
+								<td>
+									{{ site.data.registration.conference_dinner }} {{ site.data.registration.currency_code }}
+								</td>
+								<td>
+									{{ site.data.registration.conference_dinner }} {{ site.data.registration.currency_code }}
+								</td>
+							</tr>
+							{% endif %}
+						</table>
+
+						<p>
+							<em>
+								All prices shown in {{ site.data.registration.currency_name }} ({{ site.data.registration.currency_code }}).
+								{% if site.data.registration.table_note %}
+									{{ site.data.registration.table_note }}
+								{% endif %}
+							</em>
+						</p>
+
+						{% if site.data.registration.registration_open and site.data.registration.registration_link %}
+						<p style="text-align: center;">
+							<a class="button style1 large" href="{{ site.data.registration.registration_link }}">
+								Click here to register
+							</a>
+						</p>
+						{% else %}
+						<p style="text-align: center;">
+							<strong>
+								{% if site.data.registration.registration_closed_reason %}
+									{{ site.data.registration.registration_closed_reason }}
+								{% else %}
+								Registration is currently not possible.
+								{% endif %}
+							</strong>
+						</p>
+						{% endif %}
+					</div>
+				</div>
+				<hr>
+
+				<div class="row aln-center">
+					<div class="col-8">
+						<h2>Visa Information</h2>
+						<p>
+							International participants may need to apply for a visa to
+							participate in IC2S2 2026. Please
+							<a href="https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html" target="_blank">
+								consult the U.S. Department of State website
+							</a> to identify whether you need a visa to enter the United States, and, if
+							so, how to apply.
+						</p>
+
+						<p>
+							You will automatically receive a letter of invitation upon
+							successful registration which you can provide when applying for a
+							visa. Should you require additional documents or details from the
+							conference organizers in order to apply for a visa, please send an
+							email to
+							<a href="mailto:{{ site.emails.visa }}">{{ site.emails.visa }}</a>
+						</p>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>

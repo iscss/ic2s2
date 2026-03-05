@@ -1,0 +1,212 @@
+# This file contains all people involved in organizing IC2S2 in one big list,
+# sorted into groups. Each group has a "title" and a list of "people".
+# NOTE: If you already know certain groups of people (such as certain types of
+# chairs) but you don't yet know who will be part of it, you can leave out (or
+# empty) the list of people. Then the engine won't generate that entire section.
+#
+# Data format:
+# name: The full name
+# affiliation: The university/affiliation of the person
+# field: The person's field (will be second line below affiliation)
+# image: Link to an image in the images folder
+# url: A link to, e.g, the person's personal homepage.
+
+# GENERAL CHAIRS
+- title: General Chairs
+  people:
+  - name: Peter Sheridan Dodds
+    affiliation: Vermont Complex Systems Institute
+    field: Computational Social Science
+    image: /images/people/peter.jpg
+    url: https://pdodds.w3.uvm.edu/
+  - name: Mirta Galesic
+    affiliation: Complexity Science Hub Vienna
+    field: Psychology, Cognitive Science 
+    image: /images/people/mirta-galesic.jpg
+    url: https://sites.google.com/site/mirtagalesic/
+  - name: Timothy Tangherlini
+    affiliation: UC Berkeley
+    field: Cultural Analytics
+    image: /images/people/tim_tangherlini.jpg
+    url: https://vcresearch.berkeley.edu/faculty/timothy-tangherlini
+  - name: Brooke Foucault Welles
+    affiliation: Network Science Institute at Northeastern University
+    field: Computational Social Science
+    image: /images/people/brooke-welles.jpg
+    url: https://brooke-welles.squarespace.com/
+
+- title: Local Chairs
+  people:
+  - name: Juniper Lovato
+    affiliation: Vermont Complex Systems Institute
+    field: Computational Social Science
+    image: /images/people/juni.jpg
+    url: https://juniperlovato.com/
+  - name: Christopher M. Danforth
+    affiliation: Vermont Complex Systems Institute
+    field: Computational Social Science
+    image: /images/people/chris.jpg
+    url: https://cdanfort.w3.uvm.edu/
+  - name: Alexa Woodwartd
+    affiliation: Vermont Complex Systems Institute
+    field: law
+    image: /images/people/alexa.jpg
+    url: https://vermontcomplexsystems.org/who-we-are/alexa/
+
+# PROGRAM CHAIRS
+# - title: Program Chairs
+#   people:
+#   - name: Elliot Ash
+#     affiliation: ETH Zurich, Switzerland
+#     field: Economics
+#     image: /images/people/ash_elliot.jpg
+#     url: https://elliottash.com/
+#   - name: Hendrik Erz
+#     affiliation: Linköping University, Sweden
+#     field: Political Sociology
+#     image: /images/people/erz_hendrik.jpg
+#     url: https://www.hendrik-erz.de/
+#   - name: Mirta Galesic
+#     affiliation: Complexity Science Hub Vienna, Austria<br>Santa Fe Institute, USA
+#     field: Psychology, Cognitive Science
+#     image: /images/people/galesic_mirta.jpg
+#     url: https://sites.google.com/site/mirtagalesic/
+#   - name: David Garcia
+#     affiliation: Konstanz University, Germany
+#     field: Computer Science and Complexity
+#     image: /images/people/garcia_david.jpg
+#     url: https://www.polver.uni-konstanz.de/en/cdm/people/faculty/david-garcia/
+#   - name: Josef Ginnerskov
+#     affiliation: Linköping University, Sweden
+#     field: Social Sciences
+#     image: /images/people/ginnerskov_josef.jpg
+#     url: https://liu.se/en/employee/josgi08
+#   - name: Jacob Habinek
+#     affiliation: Linköping University, Sweden
+#     field: Science of Science
+#     image: /images/people/habinek_jacob.jpg
+#     url: https://www.jacobhabinek.net/
+#   - name: Petter Holme
+#     affiliation: Aalto University, Finland
+#     field: Network Science
+#     image: /images/people/holme_petter.jpg
+#     url: https://petterhol.me/
+#   - name: Andreas Jungherr
+#     affiliation: Bamberg University, Germany
+#     field: Political Science and Communication
+#     image: /images/people/jungherr_andreas.jpg
+#     url: https://andreasjungherr.net/
+#   - name: Juhi Kulshrestha
+#     affiliation: Aalto University, Finland
+#     field: Algorithmic Bias, Transparency, and Ethics
+#     image: /images/people/kulshrestha_juhi.jpg
+#     url: https://css.aalto.fi/
+#   - name: Erika Fille T. Legara
+#     affiliation: Center for AI Research, Philippines
+#     field: Network Science, Computational Social Science, Machine Learning, AI Governance
+#     image: /images/people/legara_erika.jpg
+#     url: https://erikalegara.site/
+#   - name: May Lim
+#     affiliation: University of the Philippines Diliman, Philippines
+#     field: Complex Systems
+#     image: /images/people/lim_may.jpg
+#     url: https://cxteam.liknayan.com/
+#   - name: Laura Lotero
+#     affiliation: National University of Colombia, Colombia
+#     field: Human Mobility and Complex Networks
+#     image: /images/people/lotero_laura.jpg
+#     url: https://scholar.google.com/citations?user=64kg8DwAAAAJ&hl=en&oi=sra
+#   - name: Angélica Sousa da Mata
+#     affiliation: Federal University of Lavras, Minas Gerais, Brazil
+#     field: Dynamic Processes on Complex Networks
+#     image: /images/people/da_mata_angelica.jpg
+#     url: https://orcid.org/0000-0002-3892-5274
+#   - name: Kwabena Afriyie Owusu
+#     affiliation: University of Waterloo, Canada
+#     field: Agent-Based Modeling and Common-Pool Resource Systems
+#     image: /images/people/owusu_kwabena.jpeg
+#     url: https://uwaterloo.ca/planning/profiles/kwabena-owusu
+#   - name: Denise Pumain
+#     affiliation: Université Paris | Panthéon Sorbonne, France
+#     field: Urban Science
+#     image: /images/people/pumain_denise.png
+#     url: https://geographie-cites.cnrs.fr/en/members/denise-pumain/
+#   - name: Yang Yue
+#     affiliation: Shenzhen University, China
+#     field: Urban Informatics
+#     image: /images/people/yue_yang.jpg
+#     url: https://scholar.google.com/citations?user=Or3pqN8AAAAJ&hl=en
+
+# TUTORIAL CHAIRS
+- title: Tutorial Chairs
+  people:
+  - name: Milo Z. Trujillo
+    affiliation: Network Science Institute at Northeastern University
+    field: Computational Social Science
+    image: /images/people/milo-trujillo.jpg
+    url: https://www.networkscienceinstitute.org/people/milo-trujillo
+  - name: Maria Antoniak
+    affiliation: Computer Science at University of Colorado Boulder
+    field: Natural Language Processing
+    image: /images/people/maria.png
+    url: https://maria-antoniak.github.io/
+
+
+# # POSTER SESSION CHAIRS
+# - title: Poster Chairs
+#   people:
+
+# WEBSITE AND SOCIAL MEDIA CHAIRS
+- title: "Website & Social Media Chairs"
+  people:
+  - name: Jonathan St-Onge
+    affiliation: Vermont Complex Systems Institute
+    field: Computational Social Science
+    image: /images/people/jso.jpg
+    url: https://jso.cool/about/
+#   - name: Yuan Liao
+#     affiliation: Department of Space, Earth and Environment, Chalmers
+#     field: Transport and Urban Sciences
+#     image: /images/people/liao_yuan.jpg
+#     url: https://www.chalmers.se/en/persons/yuanlia/
+#   - name: Anastasia Menshikova
+#     affiliation: Institute for Analytical Sociology, Linköping University
+#     field: Computational Social Science
+#     image: /images/people/menshikova_anastasia.jpg
+#     url: https://anastasia-menshikova.github.io/
+#   - name: José Bener
+#     affiliation: Media and Information Technology (MIT), Linköping University
+#     field: Data Visualization
+#     image: /images/people/bener_jose.png
+#     url: https://www.benerjose.com
+
+# - title: "Conference Volunteers"
+#   people:
+#   - name: Johannes Fagerlind
+#     image: /images/people/fagerlind_johannes.jpg
+#   - name: Lauren Fahey
+#     image: /images/people/fahey_lauren.jpg
+#   - name: Zhao Feng
+#     image: /images/people/feng_zhao.jpeg
+#   - name: Thomas Haase
+#     image: /images/people/haase_thomas.png
+#   - name: Yukun Jiao
+#     image: /images/people/jiao_yukun.jpeg
+#   - name: Xiaojing Jie
+#     image: /images/people/jie_xiaojing.jpeg
+#   - name: Kazuki Sakamoto
+#     image: /images/people/sakamoto_kazuki.jpg
+#   - name: Helpis Saleh
+#     image: /images/people/saleh_helpis.jpg
+#   - name: Marc Sparhuber
+#     image: /images/people/sparhuber_marc.jpg
+#   - name: Vsevolod Suschevskiy
+#     image: /images/people/suschevskiy_vsevolod.jpg
+#   - name: Yun-Tsz Tsai (Clara)
+#     image: /images/people/tsai_yun-tsz.jpeg
+#   - name: Yize Zhang
+#     image: /images/person.svg
+#   - name: Yue Zheng
+#     image: /images/person.svg
+#   - name: Noé Vidal-Naquet
+#     image: /images/person.svg

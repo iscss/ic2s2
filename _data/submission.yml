@@ -1,0 +1,9 @@
+# Submission options. Controls whether submissions for
+# abstracts or tutorials are open, and what the links
+# to, e.g., OpenReview are. NOTE: The system will display
+# the links only if both the link are set and the value
+# is true. Use this to steer when people can submit.
+call4abstracts_link: https://easychair.org/cfp/IC2S2_2026
+call4abstracts_open: true
+call4tutorials_link: https://docs.google.com/forms/d/e/1FAIpQLSccbpeg8oVCWdhImZEODX3BJfNJ8o_y-fMHOLLHIwXzK-fUeQ/viewform
+call4tutorials_open: true
