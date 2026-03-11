@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "https://2026.ic2s2.net/:splat"
+  status = 301
+  force = true
