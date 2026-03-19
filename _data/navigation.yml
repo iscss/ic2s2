@@ -1,0 +1,57 @@
+# Manually curated Navigation so that moving around pages becomes easier.
+# Groups == Sub-navigation menus
+# page must be the basename of the file without html or md
+- name: Submit
+  items:
+  - name: Topics
+    page: topics
+  - name: Call for Abstracts
+    page: submit-abstract
+  - name: Call for Tutorials
+    page: submit-tutorial
+- name: Attend
+  items:
+  - name: Register
+    page: register
+  - name: Venue
+    page: venue
+  - name: Getting there
+    page: getting-there
+  - name: Accommodation
+    page: accommodation
+  # - name: Childcare
+    # page: childcare
+  - name: Travel Grants
+    page: travel-grants
+  - name: Conduct
+    page: conduct
+  # - name: Next IC2S2
+  #   page: next-ic2s2
+# - name: Program
+#   items:
+  # - name: Awards
+  #   page: awards
+  # - name: Program
+  #   page: program
+#   - name: Poster Details
+#     page: poster
+#   - name: Instructions
+#     page: instructions
+  # - name: Keynotes
+  #   page: keynotes
+  # - name: "Keynote Recordings"
+  #   page: "https://www.youtube.com/playlist?list=PLrDB6riLfdJQaATZksFnXsWflA2cea9We"
+  # - name: Tutorials
+  #   page: tutorials
+- name: Organizers
+  page: organization # Top-level navigation only has "page", not "items" prop
+- name: About
+  items:
+  - name: Sponsors
+    page: sponsors
+  - name: Sponsor our Conference
+    page: sponsor-us
+  - name: Previous Editions
+    page: about
+  - name: ISCSS
+    page: "https://iscss.org/"

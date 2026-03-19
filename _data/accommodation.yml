@@ -1,0 +1,85 @@
+# Hotel accommodations with discounted rates for IC2S2 participants
+hotels:
+  - name: Hotel Vermont
+    booking_links:
+      - url: https://reservations.travelclick.com/106532?groupID=4726518
+        text: Booking Link
+
+  - name: Holiday Inn
+    booking_links:
+      - url: https://urldefense.com/v3/__https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=BTVVTQQ&groupCode=CSUUVM&arrivaldate=2026-07-30&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT___HFQfmI8qIWCW8HqypJzENF0I-W/OGiecTWABQfawwkxu&departuredate=2026-08-01&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT
+        text: Booking Link
+
+  - name: Hotel Champlain
+    booking_links:
+      - url: https://urldefense.com/v3/__https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=BTTVTQQ&groupCode=ICS26&arrivaldate=2026-07-27&departuredate=2026-07-30&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT__;!!FOfmI8qiWcWBHqypJtzENF0!xVOGiexcTW18Qfswq34UJ5panQNio8Od-4IwR6_5Wuj8pCLcPnwxnBOF0P0DCyw7HkDKE6DkdoLdAy2qhCtYUHI$
+        text: Booking Link
+
+  - name: Hilton Garden Inn
+    booking_links:
+      - url: https://www.hilton.com/en/attend-my-event/btvdwgi-ic2s2-27651ab7-3862-43f1-b3c5-6925efe847c2/
+        text: Booking Link
+      
+  - name: Home2 Suites
+    booking_links:
+      - url: https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=BTVWIHT&groupCode=CHT904&arrivaldate=2026-07-28&departuredate=2026-08-01&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT
+        text: Booking Link
+
+  - name: TownePlace Suites
+    booking_links:
+      - url: https://app.marriott.com/reslink?id=1762186165878&key=GRP&app=resvlink
+        text: Booking Link
+
+  - name: Windjammer
+    booking_links:
+      - url: https://www.bestwestern.com/en_US/book/hotel-rooms.46013.html?groupId=P48LE9L3
+        text: Booking Link
+
+  - name: Courtyard Burlington
+    booking_links:
+      - url: https://app.marriott.com/reslink?id=1755618979531&key=GRP&app=resvlink
+        text: Booking Link
+  
+  - name: Holiday Inn Express South Burlington - Downtown
+    booking_links:
+      - url: https://www.ihg.com/holidayinnexpress/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qIta=99801505&icdv=99801505&qSlH=BTVSO&qCiD=27&qCiMy=062026&qCoD=01&qCoMy=072026&qGrpCd=BGQ&setPMCookies=true&qSHBrC=EX&qDest=1285%20Williston%20Road,%20South%20Burlington,%20VT,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr=
+        text: Booking Link
+
+  - name: On-Campus Housing (Beds)
+    booking_links:
+      - url: https://na.eventscloud.com/ic2s22026oncampushousing
+        text: Booking Link
+
+
+# On-campus housing options (kept from previous year structure)
+campus_housing:
+  - name: University Heights Complexes
+    description: "Air-conditioned single and double occupancy rooms with semi-private bathrooms (one bathroom shared between 2-4 people). Rates include linen package."
+    rates:
+      - type: Single
+        price: "$82.00 per person"
+      - type: Double
+        price: "$59.00 per person"
+
+  - name: Central Campus Residence Hall
+    description: "Air-conditioned single and double occupancy rooms with centrally located private bathrooms."
+    rates:
+      - type: Single
+        price: "$51.00 per person ($62.00 with linens)"
+      - type: Double
+        price: "$45.00 per person ($56.00 with linens)"
+
+  - name: Standard Housing
+    description: "Non-air-conditioned single and double occupancy rooms with centrally located bathrooms."
+    rates:
+      - type: Single
+        price: "$43.00 per person ($54.00 with linens)"
+      - type: Double
+        price: "$37.00 per person ($48.00 with linens)"
+
+# Bed and Breakfast options
+bnb_options:
+  - name: The Lang House
+    url: https://www.langhousevt.com/
+  - name: The Blind Tiger
+    url: https://www.theblindtigervt.com/

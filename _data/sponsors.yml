@@ -1,0 +1,55 @@
+# Sponsor information
+# You can add various groups of sponsors that will be
+# added. If you are planning on having sponsors, but have
+# not signed a deal yet, leave the "sponsors" list of
+# the various groups empty. The framework won't generate it then.
+#
+# LEVELS DATA FORMAT
+# title: The title of the level (should be the same as the corresponding
+#        sponsors group title)
+# price: The price (full string incl. thousands delimiters and currency)
+# benefits: A list of benefits for the sponsor when becoming one
+#
+# SPONSORS DATA FORMAT
+# name: The name of the sponsor
+# url: A Link to the sponsor's website
+# image: A link to the sponsor logo in the images folder
+levels:
+- title: Platinum Sponsors
+  price: $10,000 and above
+  benefits:
+  - Logo and link on the conference webpage
+  - Logo displayed prominently at the venue and on all conference materials
+  - Complimentary registration and social event tickets for five representatives
+- title: Gold Sponsors
+  price: $6,000
+  benefits:
+  - Logo and link on the conference webpage
+  - Logo displayed prominently at the venue and on all conference materials
+  - Complimentary registration and social event tickets for three representatives
+- title: Silver Sponsors
+  price: $4,000
+  benefits:
+  - Logo and link on the conference webpage
+  - Logo displayed on conference materials
+- title: Bronze Sponsors
+  price: $2,000
+  benefits:
+  - Logo and link on the conference webpage
+  - Acknowledgment in the program booklet and during conference sessions
+################################################################################
+sponsors:
+- title: Academic Sponsors
+  sponsors:
+- title: Gold Sponsors
+  sponsors:
+  - name: Office of the Vice President for Research
+    image: /images/sponsors/UVM_Logo_Primary_Horiz_G.svg
+    width: 2 # A number between 1 and 12; square logos should get smaller values
+    url: https://www.uvm.edu/ovpr
+  - name: Vermont EPSCoR 
+    image: /images/sponsors/vt_epscor.png
+    width: 2 # A number between 1 and 12; square logos should get smaller values
+    url: https://www.uvm.edu/socks/
+- title: Silver Sponsors
+  sponsors:

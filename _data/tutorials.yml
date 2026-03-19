@@ -1,0 +1,298 @@
+# Tutorials at the Conference
+# ===========================
+# In this data file, you can specify the various elements that are important for
+# the IC2S2 tutorial day. The tutorial day is always one day in advance of the
+# conference, and it features tutorials divided into one morning and one
+# afternoon slot.
+
+# `schedule`
+# ==========
+#
+# The Schedule top-level property contains a broad overview over the tutorial
+# day, more specifically the actual day and various times.
+# The properties `morning_tutorials` and `afternoon_tutorials` will, once the
+# schedule has been prepared, contain a list of IDs for the various tutorials
+# and use this information to populate the schedule table.
+
+# `items`
+# =======
+#
+# The items top-level property contains the actual tutorials (once they are
+# available). This includes a title, an abstract, information on the tutors, and
+# an ID. The ID can in principle be anything, but in the past, regular ascending
+# integers have proven to be useful.
+
+# `past_tutorials`
+# ================
+#
+# The Past Tutorials top-level property contains information on tutorials from
+# the previous IC2S2 conference with fewer data. Specifically, much of the
+# author information is removed.
+
+# This property contains some overview information over the tutorial day (such
+# as when, the times of morning and afternoon sessions, coffee breaks, etc.)
+schedule:
+  # Which day is the tutorial day?
+  day: "July 28, 2026"
+  # Enter the appropriate times and time-ranges here for the various elements on
+  # the tutorial day. NOTE: Comment out any time slots that won't be used (e.g.,
+  # if there won't be a coffee break in the morning sessions, simply comment it
+  # out so that the system won't print that line). morning_time and
+  # afternoon_time are required.
+  venue_opens: "8:00am" # When will the doors open?
+  morning_time: "9:00am - 12:30pm" # Morning session slot
+  afternoon_time: "1:30pm - 5:00pm" # Afternoon session slot
+  coffee_break_one: "10:30am" # First coffee break
+  coffee_break_two: "3:00pm" # Second coffee break
+  # Insert the IDs of the tutorials (see below) to have them show up in the
+  # correct slots. Leave these slots empty until you have scheduled the
+  # tutorials. Enter the IDs in order
+  morning_tutorials: []
+  afternoon_tutorials: []
+
+# Here follow the actual tutorials for 2026 (to be added)
+items: []
+
+################################################################################
+# Past Tutorials from IC2S2 2025 (Norrköping)
+################################################################################
+past_tutorials:
+- title: "LLM Power to the People ✊"
+  abstract: |
+    This tutorial aims to provide an up-to-date overview of the applications of large language models (LLMs) in research, with a particular focus on key areas such as fine-grained text classification, information extraction, and text clustering. To this end, it will cover fundamental concepts, including zero-shot learning, fine-tuning, encoder-decoder architectures, and Low-Rank Adaptation (LoRA), while also presenting various types of language models and their respective affordances.
+
+    Drawing on the most recent discussions in the field, the tutorial will offer guidance on developing efficient processing pipelines, taking into consideration the computational resources available to researchers. Participants will gain practical knowledge through a combination of theoretical discussions and hands-on case studies. The session will feature Jupyter notebooks and an open-source software interface to demonstrate project implementation, including  text preparation, annotation, fine tuning, inference. Additionally, attendees will receive reusable scripts to facilitate replication and adaptation in their own research projects.
+
+    Beyond technical considerations, the tutorial will address the computational and annotation requirements associated with LLMs, as well as the environmental costs of different models. By integrating theoretical insights with practical implementation strategies, the session aims to delineate what is currently achievable with LLMs, what challenges persist, and what remains speculative.
+
+    As a follow-up to a previous IC2S2 tutorial (2023), this session has been updated to reflect recent advancements. It will cater to both advanced and less advanced programmers, helping researchers choose the most suitable approach for their work.
+  tutors:
+  - name: Étienne Ollion
+    affiliation: Professor of Sociology, Ecole Polytechnique, Paris, France
+  - name: Émilien Schultz
+    affiliation: Senior Data Scientist, CREST-Institut Polytechnique de Paris, France
+
+- title: "Bridging Human and LLM Annotations for Statistically Valid Computational Social Science"
+  abstract: |
+    The tutorial provides participants with a practical, hands-on experience in integrating Large Language Models (LLMs) and human annotations to streamline annotation workflows, ensuring both efficiency and statistical rigor. As LLMs revolutionize data annotation with their ability to label and analyze complex social phenomena at unprecedented scales, they also pose challenges in ensuring the reliability and validity of results. This tutorial introduces a systematic approach to combining LLM annotations with human input, enabling researchers to optimize annotation processes while maintaining rigorous standards for statistical inference. The session begins by framing the opportunities and challenges of leveraging LLMs for Computational Social Science (CSS). The tutorial demonstrates techniques for combining LLM annotations with human annotations to ensure statistically valid results while minimizing annotation costs. Through hands-on implementation using open-source datasets and code notebooks, participants will apply these methods to popular CSS tasks, such as stance detection, media bias, and online hate and misinformation. Additionally, the session will explore how these approaches can be adapted to other domains, such as psychology, sociology, and political science. By the end of the session, participants will gain actionable skills for reliably leveraging LLMs for data annotation in their own research.
+  tutors:
+  - name: Kristina Gligorić
+    affiliation: Postdoctoral Scholar, Computer Science, Stanford University
+  - name: Cinoo Lee
+    affiliation: Postdoctoral Scholar, Psychology, Stanford University
+  - name: Tijana Zrnic
+    affiliation: Ram and Vijay Shriram Postdoctoral Fellow, Stanford Data Science, Stanford University
+
+- title: "The Role of AI in Misinformation: Current Trends, Detection, and Mitigation"
+  abstract: |
+    As AI-generated content becomes more prevalent, understanding its role within the broader misinformation landscape is critical. The widespread proliferation of misinformation in combination with the rise of AI technologies poses challenges across domains: Concerns persist that, for example, Large Language Models (LLMs) or deepfake systems have a negative impact on the creation and amplification of false or misleading information. While there are debates within the research community on the extent of AI influence on misinformation development, the challenges posed by misinformation are amplified as social media platforms increasingly dismantle traditional guardrails like fact-checking. These shifts demand interdisciplinary research to explore not only how AI contributes to the spread of misinformation but also how it can serve as a tool to better understand and combat it. Situating AI-generated misinformation within the wider context of existing dynamics highlights the urgency of addressing its impact across domains, both in science and politics, particularly as societal polarization deepens. Participants will gain hands-on experience analyzing misinformation-related datasets using natural language processing and network analysis. The tutorial emphasizes practical applications by providing coding exercises in a Jupyter notebook environment for detecting and simulating the spread of misinformation.
+  tutors:
+  - name: Miriam Schirmer
+    affiliation: Postdoctoral Scholar, Northwestern University
+  - name: Julia Mendelsohn
+    affiliation: Postdoctoral Scholar, University of Chicago
+  - name: Dustin Wright
+    affiliation: Postdoctoral Fellow, University of Copenhagen
+  - name: Dietram A. Scheufele
+    affiliation: Taylor-Bascom Chair and Vilas Distinguished Achievement Professor, University of Wisconsin-Madison
+  - name: Ágnes Horvát
+    affiliation: Associate Professor of Communication and Computer Science, Northwestern University
+
+- title: "Planetary Causal Inference: an R tutorial on how to conduct causal inference with satellite images data"
+  abstract: |
+    This R tutorial is based on our book-in-progress, Planetary Causal Inference (PCI), which proposes using Earth observation (EO) data to enhance social science research by expanding both the scope and resolution of data analysis. Traditional data sources like surveys and national statistics are often expensive, limited in coverage, and rarely provide real-time insights—challenges that hinder comprehensive planetary-scale studies. In contrast, satellite-based EO data offer fine-grained, global perspectives on phenomena such as urban growth, poverty, deforestation, and conflict, capturing information across diverse spatial and temporal scales.
+    This tutorial introduces the emerging practice of EO-based machine learning (EO-ML), where advanced models transform satellite-derived spatial data into proxies for social science metrics and feed these into causal inference pipelines. By integrating knowledge from geography, history, and multi-level frameworks, PCI fosters a broader understanding of human–environment interactions, helping researchers address questions that span household, neighborhood, regional, and global contexts.
+    Through its cookbook-style presentation of "ingredients" (data, methods) and "recipes" (analysis steps), PCI equips social scientists to confidently adopt and adapt EO-ML tools. This approach helps generate highly detailed insights and enables researchers to explore pressing global issues—ranging from armed conflict to sustainable development—with new analytical power and precision.
+  tutors:
+  - name: Adel Daoud
+    affiliation: Associate Professor at Institute for Analytical Sociology, Linköping University, and Affiliated Associate Professor in Data Science and Artificial Intelligence for the Social Sciences, Department of Computer Science and Engineering, Chalmers University of Technology, Gothenburg, Sweden
+  - name: Connor Jerzak
+    affiliation: Assistant Professor in Government, UT Austin
+
+- title: "A Workflow for Open Reproducible Computational Social Science"
+  abstract: |
+    Reproducibility is essential for establishing trust and maximizing reusability of empirically calibrated simulations and other computational social science studies. Participants learn to make research projects open and reproducible according to the FAIR principles and TOP-guidelines. The workshop first establishes the fundamental principles of reproducible science, followed by a 10-minute live demonstration of creating a reproducible project using the `worcs` R-package, which streamlines the creation of reproducible projects. WORCS is easy to learn for beginners while also being highly extendable and compliant with most institutional and journal requirements. Next, topics essential for computational social science are addressed: random seeds, parallelization, integration testing to catch errors before running time-consuming analyses, and combining worcs with "targets" to reduce redundant computation, saving time and reducing the computational studies' climate footprint. Participants are encouraged to bring their own code – e.g., for a simulation study, or to use sample code provided by the organizer. Q&A and Discussion sections ensure that the tutorial's content aligns with participants' needs, while guided demonstrations and hands-on exercises allow participants to develop the experience and skills needed to implement open reproducible workflows in their future research.
+  tutors:
+  - name: Caspar van Lissa
+    affiliation: Associate Professor, Tilburg University, Tilburg, Netherlands
+
+- title: "Research Cartography with Atlas"
+  abstract: |
+    Scientific inquiry depends on "standing on the shoulders of giants" — building on the findings of prior work. However integrating knowledge across many papers is challenging and unreliable. Papers may use terms differently, or leverage different terms to describe the same thing. Further, papers may over emphasis an outcome, or may not describe research activity with enough detail to fully understand what was measured. All these challenges, and many more make understanding the complete landscape of a research area almost impossible.
+
+    Atlas, an open source platform, tackles this problem by emphasizing commensurability—the practice of describing research findings in ways that enable valid comparisons. Instead of relying solely on persuasive narratives, Atlas systematically codes experimental attributes, from detailed methodology to condition-specific distinctions. This process shifts the focus to what researchers actually do, rather than merely what they claim, making the integration of diverse studies more reliable.
+
+    We will demonstrate how Atlas transforms research papers into a series of quantified dimensions, producing what we refer to as research cartography. Through guided exercises, you will learn to apply Atlas to your own projects, analyzing multiple levels of data within a single study. Our goal is to show how this method enhances transparency and reliability in scientific conclusions, ultimately advancing progress by enabling evidence-based insights that are both rigorous and comparable.
+  tutors:
+  - name: Mark Whiting
+    affiliation: CTO, Pareto Inc. and visiting scientist at University of Pennsylvania
+  - name: Linnea Gandhi
+    affiliation: Lecturer and PhD candidate at Wharton at University of Pennsylvania
+  - name: Amirhossein Nakhaei
+    affiliation: M.Sc. Computational Social Science, RWTH Aachen
+  - name: Duncan Watts
+    affiliation: Stevens University Professor at University of Pennsylvania
+
+- title: "Scalable Analysis of GPS Human Mobility Data with Applications to Socio-Spatial Inequality"
+  abstract: |
+    Large-scale human mobility datasets derived from mobile phones have become a valuable resource in the field of human mobility. They have found diverse applications in tasks such as travel demand estimation, urban planning, epidemic modelling, and more. However, these datasets remain largely inaccessible to the broader community due, in part, to the technical difficulties in processing these massive datasets and the comprehensive understanding of data bias and potential.
+
+    In this tutorial, we will first introduce an open-source library of code from the NOMAD project (Network for Open Mobility Analysis and Datasets) as a tool to overcome the technical challenges of processing massive data sets. In the second part, we will demonstrate a critical application of human mobility analysis - socio-spatial inequality developed in realTRIPS projects (EvALuating Land Use and TRansport Impacts on Urban Mobility Patterns). The analysis provides an understanding of differences in how social phenomena play out across neighbourhoods, regions, and sociodemographic groups. Overall, we aim to demonstrate reproducible and widely applicable research methods. The library used for part of the analysis, built on Python and Spark, is designed to process this class of data at scale and implements a broad range of processing algorithms which will be employed for this particular application.
+  tutors:
+  - name: Jorge Barreras
+    affiliation: Postdoc, University of Pennsylvania; Computational Social Science Lab (CSSLab), Wharton School
+  - name: Thomas Li
+    affiliation: M.Sc. Student, School of Engineering, University of Pennsylvania
+  - name: Chen Zhong
+    affiliation: Associate Professor in Urban Analytics, Centre for Advanced Spatial Analysis (CASA), UCL
+  - name: Cate Heine
+    affiliation: Research Fellow in Urban mobility and inequality, CASA UCL
+  - name: "Adam (Zhengzi) Zhou"
+    affiliation: PhD student at CASA UCL
+
+- title: "Mobility Flows and Accessibility Using R and Big Open Data"
+  abstract: |
+    Large-scale human mobility datasets provide unprecedented opportunities to analyze movement patterns, generating critical insights for many fields of research. Until recently, access to human mobility data was a privilege of a few researchers. Thanks to countries like Spain that pioneered to make high resolution aggregated human mobility data open, such data is becoming increasingly accessible, and similar mobility data may soon be widely available as part of official statistics across the European Union. However, the complexity and sheer volume of this data present practical challenges related to data acquisition, efficient processing, geographic disaggregation, network representation, and interactive visualization.
+
+    The workshop addresses these challenges by showcasing end-to-end workflows that harness state-of-the-art R packages and methods. Participants will learn how to acquire and manage multi-gigabyte mobility datasets on consumer level laptops, combine and compare the actual mobility flows and the access to opportunities, and create informative mobility flows visualizations.
+
+    Spanish open mobility data is used as a case study. This data contains anonymized and grouped flows between more than 3500 locations in Spain with hourly intervals across 3 full years. Thanks to the inclusion of several demographic variables, this data presents a universe of opportunities for analysis and research questions to explore.
+  tutors:
+  - name: Egor Kotov
+    affiliation: PhD Student, Max Planck Institute for Demographic Research, Rostock, Germany
+  - name: Johannes Mast
+    affiliation: PhD Student, German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt, DLR)
+
+- title: "Reinforcement Learning and Evolutionary Game Theory are Two Sides of the Same Coin"
+  abstract: |
+    Assuming that individuals are rational is often unjustified in many social and biological systems, even for simple pairwise interactions. As such, in many real-world multi-agent systems, the goal is shifted towards the understanding of the complex ecologies of behaviours emerging from a given dilemma (or "game"). This is where evolutionary game theory (EGT) shines as a theoretical and computational framework. Likewise, from the computational perspective, multi-agent reinforcement learning (MARL) models how self-interested agents learn and improve their policies through the accumulation of rewards coming from their past experience. Just like strategies in evolutionary game theory adapting to one another, agents' actions evolve based on their empirical returns. The similarity is no coincidence. In this tutorial we show how these two frameworks, although applied in different context, are two sides of the same coin, presenting fundamen-tal mathematical results that demonstrate how the equilibria of population dynamics can be encoded by simple RL agents policies and the other way round.
+
+    We will provide use-cases in which each modelling framework is useful. This tutorial will help the social science practitioner acquire new tools coming from AI and complex systems, and computer science practitioners to understand their research in terms of economic models.
+  tutors:
+  - name: Paolo Turrini
+    affiliation: Associate Professor, Department of Computer Science, University of Warwick, UK
+  - name: Elias Fernández Domingos
+    affiliation: Postdoctoral Researcher at the AI Lab, Vrije Universiteit Brussel, Belgium
+
+- title: "Computational Social Science for Sustainability"
+  abstract: |
+    Humans face an existential challenge to transition to sustainable practices that do not exhaust available ecological, economic, and social capital. Computational social-cognitive models can be used to deduce the efficacy of potential training or educational interventions to promote sustainable practices. Tutorial attendees will learn to use the socmod library to create their own models of social learning and social influence to predict the relative success of different intervention strategies. Sustainability motivates this work, but the framework could be used to model related social and behavioral contexts.
+  tutors:
+  - name: Matthew A. Turner
+    affiliation: Lecturer in Environmental Social Sciences at the Stanford Doerr School of Sustainability, Stanford University
+  - name: James Holland Jones
+    affiliation: Professor, Environmental Social Sciences, Stanford Doerr School of Sustainability, Stanford University
+
+################################################################################
+# Past Tutorials from IC2S2 2024 and earlier
+################################################################################
+- title: "Making Models We Can Understand: An Interactive Introduction to Interpretable Machine Learning"
+  abstract: |
+    In many areas of social science, we would like to use machine learning models to make better decisions. However, many machine learning models are opaque or "black-box," meaning that they do not explain their predictions in a way that humans can understand. This lack of transparency is problematic, leading to questions of possible model biases, and unclear accountability for incorrect decisions. Interpretable or "glass box" machine learning models give insight into model decisions and can be used to create more fair and accurate models. Interpretability in machine learning is crucial for high stakes decisions and troubleshooting. Interpretable machine learning started as far back as the 1970's, but has gained momentum as a subfield only very recently. We will overview recent research in the area, provide fundamental principles for interpretable machine learning, and provide hands-on activities highlighting the use of the techniques on real world data. This tutorial will introduce the frontier of interpretable machine learning, and equip researchers and scientists with the knowledge and skills to apply interpretable machine learning in their research tasks for effective data analysis and responsible decision-making.
+  tutors:
+  - name: Chudi Zhong
+    affiliation:
+  - name: Alina Jade Barnett
+    affiliation:
+  - name: Harsh Parikh
+    affiliation:
+
+- title: New Approaches and Data Sources to Study Digital Media and Democracy
+  abstract: |
+    As we head into a crucial election year in the U.S. and Europe, political forces like populist and radical parties or movements or authoritarian governments abroad and societal processes such as polarization or declining trust in parliaments pose threats to the legitimacy of democratic institutions. Academic research on the role of digital media in shaping these processes and democracy at-large is striving. Nonetheless, our research areas and analysis potential are oftentimes confined to the data provided by platforms. For democracy research in particular, it is important to link digital behavioral data with individual-level information on demographics and variables like party identification, political trust or evaluations of other societal groups. While getting individual-level data has been an important issue ever since, platforms have restricted data access further. As potential remedies provided by the EU's Digital Services Act are not yet foreseeable, researchers have to devise their own solutions for collecting relevant digital behavioral data in the "Post-API Age". In many academic institutions, research software for data collection like web tracking via browser add-ons, mobile apps or data donations are being developed. Currently, there is the risk that these initiatives remain unconnected and work is duplicated. The workshop aims to bring together research groups working on new technical solutions and innovative approaches for studying digital democracy.
+  tutors:
+  - name: Sebastian Stier
+    affiliation:
+  - name: Philipp Lorenz-Spreen
+    affiliation:
+  - name: Lisa Oswald
+    affiliation:
+  - name: David Lazer
+    affiliation:
+
+- title: "Exploring Emerging Social Media: Acquiring, Processing, and Visualizing Data with Python and OSoMe Web Tools"
+  abstract: |
+    In the digital age, social media platforms have become crucial for societal interaction and communication. Computational social science, especially social media research, has shed light on crucial insights such as detecting bots, identifying suspicious activities, and uncovering narratives. Underlying these findings is the combination of large-scale data and network science techniques that reveal user connectivity and interactions.
+
+    There have been significant shifts in the landscape of computational social science research in recent years. New restrictions on data access policies of widely used platforms pose significant challenges to the types of research that can be conducted. On the other hand, emerging platforms that offer open data access, like Bluesky and Mastodon, have seen a surge in popularity, opening opportunities for investigation. Additionally, the rapid development of large language models (LLMs) provides new insights to represent and understand published content. The Observatory on Social Media (OSoMe) addresses these challenges and opportunities by focusing on developing data acquisition tools for emergent platforms, providing historical datasets, and synthetic data, and developing novel data analysis tools and techniques.
+
+    This tutorial aims to guide participants through these new developments, highlighting the current approaches for accessing social media data, including the use of OSoMe's infrastructure to acquire social media data or generate data from a model of a social media platform, and methodologies to understand this data. Attendees will learn to build various network types, extending beyond traditional interactions like replies and re-posts to include co-post and co-hashtag networks, enabling diverse data representations for different research needs. The tutorial will cover network science techniques, including basic network features, centrality measures, and community detection, along with techniques for building and analyzing text-based embeddings, such as those generated by the Sentence-BERT method. The tutorial will also cover techniques to extract narratives and attribute content-aware labels to communities.
+
+    Moreover, participants will be guided through advanced visualization tools like Helios-Web, be conducted in Python and utilize Jupyter notebooks preloaded with datasets and scripts. These materials will be open-source and available on GitHub, providing participants with a toolkit to kickstart or advance their social media research endeavors.
+  tutors:
+  - name: Filipi Nascimento Silva
+    affiliation:
+  - name: Kaicheng Yang
+    affiliation:
+  - name: Bao Tran Truong
+    affiliation:
+  - name: Wanying Zhao
+    affiliation:
+
+- title: "Collecting Digital Trace Data Through Data Donation"
+  abstract: |
+    Researchers from the IC2S2 community often struggle with the lack of access to data about online behavior. This challenge is even more pressing now that several APIs are closing. At the same time, in our everyday lives, we as individuals leave more and more digital traces behind on digital platforms: for example, by liking a post on Instagram or sending a message via WhatsApp; when we tap our electronic card on public transportation or complete an online banking transaction. The promise of digital humanities and computational social science is that researchers can utilize these digital traces to study human behavior and social interaction at an unprecedented level of detail. In summary, while the amount of digital trace data increases, most are closed off in proprietary archives of commercial corporations, with only a subset being available to a small set of researchers at a platform's discretion, or through increasingly restricted and opaque APIs.
+
+    This tutorial helps IC2S2 researchers understand and deploy an alternative to circumvent these challenges. This alternative approach to gain access to digital traces is enabled thanks to the GDPR's right to data access and data portability and similar legislation in other countries. As a result, all data processing entities are required to provide citizens a digital copy of their personal data upon request in electronic form. We refer to these pieces of personal data as Data Download Packages (DDPs). This legislation allows researchers to invite participants to share their DDPs. A major challenge is, however, that DDPs potentially contain very sensitive data. Conversely, often not all data is needed to answer the specific research question. To tackle these challenges, an alternative workflow has been developed: First, the participant requests their personal DDP at the platform of interest. Second, they download it onto their own personal device. Third, by means of local processing, only the features of interest to the researcher are extracted from that DDP. Fourth, the participant inspects the extracted features after which they can choose what they want to donate (or decline to donate). Only after selecting the data for donation and clicking the button 'donate', the donated data is sent to a storage location and can be accessed by the researcher and be used for further analysis.
+
+    After having participated in this tutorial, attendees will know what designing a data donation study entails and what important aspects should be considered. Attendees will learn about the different types of study designs in which data donation can be incorporated. Furthermore, attendees will learn how to configure their own data donation study using the open-source software Port and how to write their own Python scripts used for the extraction of digital trace data.
+  tutors:
+  - name: Laura Boeschoten
+    affiliation:
+  - name: Niek de Schipper
+    affiliation:
+
+- title: "Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers"
+  abstract: |
+    Social scientists with data science skills are increasingly assuming positions as computational social scientists in academic and non-academic organizations. However, as computational social science (CSS) is still relatively new to the social sciences, CSS can feel like a hidden curriculum for many Ph.D. students. To support social science Ph.D. students, we provide an accessible tutorial for CSS training based on our collective working experiences in academic, public, and private sector organizations. We argue that students should supplement their traditional social science training in research design and domain expertise with CSS training, focused on three core areas: (1) learning data science skills; (2) building a portfolio that uses data science to answer social science questions; and (3) connecting with computational social scientists. We conclude with some practical recommendations for departments and professional associations to better support Ph.D. students.
+
+    The paper form of this tutorial was published in PS: Political Science and Politics, the American Political Science Association's professionalization journal, and has been viewed 2,317 times and downloaded 584 times since August 2023 (as of December 23, 2023).
+  tutors:
+  - name: Jae Yeon Kim
+    affiliation:
+  - name: Tiago Ventura
+    affiliation:
+  - name: Aniket Kesari
+    affiliation:
+  - name: Sono Shah
+    affiliation:
+  - name: Tina Law
+    affiliation:
+  - name: Subhik Barari
+    affiliation:
+  - name: Sarah Shugars
+    affiliation:
+
+- title: Using LLMs for Computational Social Science
+  abstract: |
+    Our tutorial will guide participants through the practical aspects and hands-on experiences of using Large Language Models (LLMs) in Computational Social Science (CSS). In recent years, LLMs have emerged as powerful tools capable of executing a variety of language processing tasks in a zero-shot manner, without the need for task-specific training data. This capability presents a significant opportunity for the field of CSS, particularly in classifying complex social phenomena such as persuasiveness and political ideology, as well coding or explaining new social science constructs that are latent in text. This tutorial provides an in- depth overview on how LLMs can be used to enhance CSS research. First, we will provide a set of best practices for prompting LLMs, an essential skill for effectively harnessing their capabilities in a zero-shot context. This step of the talk assumes no prior background. We will explain how to select an appropriate model for the task, and how factors like model size and task complexity can help researchers anticipate model performance. To this end, we introduce an extensive evaluation pipeline, meticulously designed to assess the performance of different language models across diverse CSS benchmarks. By covering these results, we will show how CSS research can be broadened to a wider range of hypotheses than prior tools and data resources could support. Second, we will discuss some of the limitations with prompting as a methodology for certain measurement scales and data types, including ordinal data, and continuous distributions. This part will look more "under the hood" of a language model to outline challenges around decoding numeric tokens, probing model activations as well as intervening on model parameters. By the end of this session, attendees will be equipped with the knowledge and skills to effectively integrate LLMs into their CSS research.
+  tutors:
+  - name: Diyi Yang
+    affiliation:
+  - name: Caleb Ziems
+    affiliation:
+  - name: Niklas Stoehr
+    affiliation:
+
+- title: "Thinking With Deep Learning: An Exposition Of Deep (Representation) Learning for Social Science Research"
+  abstract: |
+    A deluge of digital content is generated daily by web-based platforms and sensors that capture digital traces of communication and connection, and complex states of society, the economy, the human mind, and the physical world. Emerging deep learning methods enable the integration and analysis of these complex data in order to address research and real-world problems by designing and discovering successful solutions. Our tutorial serves as a companion to our book, "Thinking with Deep Learning". This book takes the position that the real power of deep learning is unleashed by thinking with deep learning to reformulate and solve problems traditional machine learning methods cannot address. These include fusing diverse data like text, images, tabular and network data into integrated and comprehensive "digital doubles" of the subjects and scenarios you want to model, the generation of promising recommendations, and the creation of AI assistants to radically augment an analyst or system's intelligence. For scientists, social scientists, humanists, and other researchers who seek to understand their subjects more deeply, deep learned representations facilitate the opportunity to not only predict and simulate them but also to provide novel insights, associations, and understanding available for analysis and reuse. \n The tutorial will walk attendees through various non-nerual representations of social text, image and network data, and the various distance metrics we can use to measure between these representations. We then move on to introducing to neural models and their use in modern science and computing, with a focus on social sciences. After introducing neural architectures, we will explore how they are used with various multi-modal social data, and how their power can be unleashed with integrating and aligning these representations.
+  tutors:
+  - name: James Evans
+    affiliation:
+  - name: Bhargav Srinivasa Desikan
+    affiliation:
+
+- title: "Active Agents: An Active Inference Approach to Agent-Based Modeling in the Social Sciences"
+  abstract: |
+    This tutorial will teach attendees about Active Inference as an agent-based modeling framework and its application to computational social science. Active Inference is an integration of neuroscience and cognitive science which builds a normative theory for biological and thus also social and cultural phenomena, with empirical validation at a neuronal level. Recent application topics as related to, e.g., economics, psychology and sociology, include multi-armed bandit models, cooperative action, approach-avoid behavior, and confirmation bias. Active Inference's novelty lies in its integration of perception, "changing one's mind," with action, "changing the world," via free energy minimization as a single cost function. This overcomes the 'passive' approach of recent generative AI (ex. LLMs) to learning and data generation and further allows agents to balance exploration (acting to seek information) with exploitation (acting to realize one's preferences) as a novel approach to the exploration-exploitation social science debate. This framework can be adapted to both single- and multi-agent settings, and running simulations of these agents and viewing their modifiable and interpretable parameters allows for deriving insights about their actions, beliefs, and outcomes over time. After a primer on Active Inference, this tutorial teaches attendees how to copy and adapt an open-source Python script (which can be run within or downloaded from Google Colab in-browser) for their own experimental simulations which can be shared for experimental reproducibility and, depending on the experiment, fit to real empirical data.
+  tutors:
+  - name: Andrew Pashea
+    affiliation:
+
+- title: "The Dark Web: Harnessing the Platform for Social Science Research"
+  abstract: |
+    The dark web remains mysterious, with many struggling to comprehend its nature. While some perceive it as a breeding ground for crime and injustice, others view it as an essential resource for individuals worldwide facing censorship, bigotry, and oppression. Opinions on the technology are divisive, yet it undeniably exists and is utilized by millions daily. Embraced by a spectrum of users, from cybercriminals to political dissidents to ordinary suburban parents, this platform offers a fascinating arena for studying diverse human behaviors and exploring the intricate intersections of core ethics and values. \n This workshop aims to provide participants with an understanding of the dark web—its functioning and how to access it. It will delve into the ethical and legal considerations surrounding the dark web, offering a rich terrain for research. The session will also showcase various techniques for conducting such research. By the end of the tutorial, participants will possess the knowledge and skills required to engage with the dark web as a platform for their own research endeavors.
+  tutors:
+  - name: Brady Lund
+    affiliation:

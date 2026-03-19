@@ -1,0 +1,53 @@
+<!-- Header section -->
+<section
+  id="header"
+  class="wrapper"
+  {% if page.url == '/' %}
+  style="background: url('/images/IC2S2_2026_teaser_NRK.png')"
+  {% else %}
+  style="background: url('/images/ic2s2_2026_backdrop.png')"
+  {% endif %}
+>
+  <!-- Background video; the homepage video needs a reduced brightness -->
+  <!--
+    Attribute explainer:
+    * autplay: Video starts immediately with no user interaction
+    * playsinline: Required on iPhone to prevent the video from entering fullscreen while playing
+    * muted: Ensures iPhones play the video automatically because it doesn't have audio
+    * loop: Loop it infinitely
+    * style: Ensure the video covers the entire header's background always
+    cf.: https://webkit.org/blog/6784/new-video-policies-for-ios/
+  -->
+  <video
+    autoplay
+    playsinline
+    muted
+    loop
+    style="position: absolute; min-height: 100%; min-width: 100vw;{% if page.url == '/' %} filter: brightness(65%);{% endif %}"
+    {% if page.url == '/' %}
+      cover="/images/ic2s2_2026_Teaser_Burly.mp4"
+    {% else %}
+      cover="/images/ic2s2_2026_Teaser_Burly.mp4"
+    {% endif %}
+  >
+    {% if page.url == '/' %}
+      <!-- Drone video for homepage -->
+      <source src="/images/ic2s2_2026_Teaser_Burly.mp4" type="video/mp4" />
+      {% else %}
+      <!-- Network video for other pages -->
+      <source src="/images/ic2s2_2026_backdrop.webm" type="video/webm" />
+    {% endif %}
+  </video>
+  
+  <!-- Logo -->
+  <div id="logo">
+    {% if page.url == '/' %}
+    <img a href="/", src="/images/ic2s2_logo_white.png" alt="IC2S2 logo" style="max-width: 100%;">
+    <h1>{{ site.location }}</h1>
+    {% else %}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+  </div>
+
+  {% include nav.html %}
+</section>

@@ -1,0 +1,73 @@
+---
+title: Accommodation
+---
+<section id="main" class="wrapper style3">
+  <div class="title">Accommodation</div>
+  <div class="container">
+    <p>
+      Burlington offers a wide range of accommodation types, from hotels to campus housing to bed and breakfasts. Questions regarding accommodation and registration can be
+      emailed to <a href="mailto:{{ site.emails.accommodation }}">{{ site.emails.accommodation }}</a>
+    </p>
+
+    <h2>Hotel Accommodations</h2>
+    <p>
+      The following hotels offer discounted rates for IC2S2 participants:
+    </p>
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 2em;">
+      <thead>
+        <tr style="background-color: #f5f5f5; border-bottom: 2px solid #ddd;">
+          <th style="padding: 10px; text-align: left;">Hotel Name</th>
+          <th style="padding: 10px; text-align: center;"></th>
+          <th style="padding: 10px; text-align: center;">Booking Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for hotel in site.data.accommodation.hotels %}
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="padding: 10px;">{{ hotel.name }}</td>
+          <td style="padding: 10px; text-align: center;">{{ hotel.rooms }}</td>
+          <td style="padding: 10px; text-align: center;">
+            {% if hotel.note %}
+              <em>{{ hotel.note }}</em>
+            {% else %}
+              {% for link in hotel.booking_links %}
+                <a href="{{ link.url }}" target="_blank">{{ link.text }}</a>{% if forloop.last == false %}<br>{% endif %}
+              {% endfor %}
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <p><strong>Total Hotel Rooms:</strong> {{ site.data.accommodation.total_hotel_rooms }}</p>
+
+    <h2>On-Campus Housing</h2>
+    <p>
+      For highly discounted accommodations, campus housing is available. UVM offers several levels of overnight accommodations. Our 2025 rates are listed below; generally our rates increase about 3% annually, but we have confirmed if a contract is signed before May we can hold our 2025 housing prices. <strong>Rates do not include 12% housing tax.</strong> Linen package includes sheets, pillow and pillowcase, blanket, bath towels, hand towel, and washcloth.
+    </p>
+
+    {% for housing in site.data.accommodation.campus_housing %}
+    <h3>{{ housing.name }}</h3>
+    <p>{{ housing.description }}</p>
+    <ul>
+      {% for rate in housing.rates %}
+      <li><strong>{{ rate.type }}:</strong> {{ rate.price }}</li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <p>
+      On campus housing registration can be incorporated into your conference registration for people who would like an affordable, convenient housing option.
+    </p>
+
+    <h2>Bed and Breakfast Options</h2>
+    <p>There are also Bed and Breakfast options within walking distance of campus:</p>
+    <ul>
+      {% for bnb in site.data.accommodation.bnb_options %}
+      <li><a href="{{ bnb.url }}" target="_blank">{{ bnb.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

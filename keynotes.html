@@ -1,0 +1,70 @@
+---
+title: Keynotes
+---
+<!-- Overview -->
+<section id="highlights" class="wrapper style1">
+	<div class="title">Invited Speakers</div>
+	<div class="container">
+		<div class="row aln-center">
+
+			{% for speaker in site.data.keynotes.speakers %}
+			<div class="col-4 col-6-medium">
+				{% if site.data.keynots.show_details %}
+					{% comment %} When we show details, link to the details below ... {% endcomment %}
+				<a href="#{{ speaker.name | slugify }}-{{ speaker.title | slugify }}" class="image featured">
+				{% else %}
+				{% comment %} ... otherwise link to the speaker's homepage directly. {% endcomment %}
+				<a href="{{ speaker.url }}" class="image featured">
+				{% endif %}
+					<img
+						src="{{ speaker.image }}" style="max-width: 100%;" alt="{{ keynote.name }}" />
+					</a>
+				<center>
+					<h3><a href="{{ speaker.url }}">{{ speaker.name }}</a></h3>
+					<p>
+						{{ speaker.affiliation }}
+						{% if speaker.field %}
+						&mdash; {{ speaker.field }}
+						{% endif %}
+					</p>
+				</center>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<!-- Details -->
+{% if site.data.keynotes.show_details %}
+<section id="highlights" class="wrapper style3">
+	<div class="title">Keynotes</div>
+	<div class="container">
+		{% for speaker in site.data.keynotes.speakers %}
+		<div class="row aln-left" style="padding: 20px;" id="{{ speaker.name | slugify }}-{{ speaker.title | slugify }}">
+			<div class="col-7 col-12-medium">
+				<h6 id="augmented">{{ speaker.name }} <a href="#highlights">[↑]</a></h6>
+				<h6 id="augmented"><i>{{ speaker.title }}</i></h6>
+				{% if speaker.chair_name %}
+				<h4>Chair: {{ speaker.chair_name }}</h4>
+				{% endif %}
+				<h4>{{ speaker.date }}</h4>
+			</div>
+			<div class="col-3 col-12-medium">
+				<img class="image featured" src="{{ speaker.image }}" style="max-width: 300px;">
+			</div>
+		</div>
+		<div class="row aln-left">
+			<div class="col-7 col-12-medium">
+				<h5>Abstract</h5>
+				{{ speaker.abstract }}
+			</div>
+			<div class="col-5 col-12-medium">
+				<h5>Bio</h5>
+				{{ speaker.bio }}
+			</div>
+		</div>
+		<hr>
+		{% endfor %}
+	</div>
+</section>
+{% endif %}

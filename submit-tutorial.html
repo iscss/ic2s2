@@ -1,0 +1,156 @@
+---
+title: Submit Tutorial Proposal
+---
+
+<section id="main" class="wrapper style3">
+	<div class="title">Call for Tutorials</div>
+	<div class="container">
+		<div id="content">
+			<article class="box post">
+				<center>
+					<ul class="actions special">
+						<li>
+							{% if site.data.submission.call4tutorials_link and site.data.submission.call4tutorials_open %}
+							<a href="{{ site.data.submission.call4tutorials_link }}" class="button style1 large">Submit Tutorial</a>
+							{% else %}
+							Submission is currently not available.
+							{% endif %}
+						</li>
+					</ul>
+				</center>
+
+				<p>&nbsp;</p><!-- Spacer -->
+
+				{% include dates.html category='tutorial' heading='false' %}
+
+				<h6>Call for tutorials</h6>
+
+				<p>
+					The International Conference on Computational Social Science (IC2S2) is the premier conference bringing together researchers from different disciplines interested in using computational and data-intensive methods to solve problems relevant to society. IC2S2 hosts academics and practitioners in computational science, complexity, network science, and social science, and provides a platform for new research in the field of computational social science.
+				</p>
+
+				<h6>Submission Instructions</h6>
+
+				<p>
+					Submissions for Tutorial proposals should be formatted according to the official
+					<a href="/files/ic2s2_2026_latex_template_tutorials.zip">LaTeX</a> or
+					<a href="/files/ic2s2_2026_word_template_tutorials.docx">MS Word</a>
+					template and should be no more than
+					<strong>three pages</strong> in length. The submission file must be submitted in PDF format and should be no larger than
+					20MB. Proposals should contain the following:
+				</p>
+
+				<ul>
+					<li><strong>Title</strong></li>
+					<li><strong>Presenters / organizers:</strong> Please provide names, affiliations, email addresses, and short bios (up to 200 words) for each presenter. Bios should cover the presenters' expertise related to the topic of the tutorial. If there are multiple presenters, please describe how the time will be divided between them.</li>
+					<li><strong>Topic:</strong> An abstract describing the topic (up to 300 words)</li>
+					<li><strong>Rationale:</strong> What is the objective / learning outcome of the tutorial? What is the benefit
+						for the
+						attendees? Why is this tutorial important to the IC2S2 community?</li>
+					<li><strong>Format:</strong> A description of the proposed event format and a list of proposed activities,
+						with a
+						description of the hands-on component (tools, packages, methods etc). We encourage organizers to specify any
+						technique that they can offer to broaden the accessibility of the content (e.g., closed captioning of
+						slides).</li>
+					<li><strong>Equipment:</strong> A short note on equipment or features required for the tutorial.</li>
+					<li><strong>Audience:</strong> A short statement about the expected target audience. What prior knowledge, if
+						any, do
+						you expect from the audience?</li>
+					<li><strong>Proposed length:</strong> please choose from 3 hours (full session) or 6 hours (full day). If you
+						are
+						flexible, please indicate in the outline which parts will be included in the short/long versions.</li>
+					<li><strong>Preferred time slot:</strong> Please indicate your preference for the morning slot (from 9.15am)
+						or the
+						afternoon slot (from 1:45pm)</li>
+					<li><strong>Number of participants:</strong> Please specify the maximum number of participants that could
+						reasonably
+						attend and be instructed by the organizers.</li>
+					<li><strong>Previous tutorials:</strong> Has the tutorial been presented previously? If so, specify the
+						previous venues
+						and years in which the event was held, and provide either a short description or a link to the websites of
+						the previous editions.</li>
+				</ul>
+
+				<p>
+					The aim with tutorials is that participants can take home knowledge and skills on methods that they can apply
+					to their own research. <strong>Priority will be given to tutorials that include hands-on and active learning
+						components</strong>. Tutorials should be comprehensive and should not focus only on the presenter’s previous
+					work. We also welcome proposals for tutorials on "disciplinary state of the art sessions" that give a focused
+					overview on the latest developments, trends and perspectives in a specific discipline or research area and any
+					other topics at the intersection of the social sciences, computer science and/or statistics. Tutorials should
+					be of interest to a substantial portion of the community and should represent a sufficiently mature area of
+					research or practice. A regular tutorial slot is 3 hours long. However, we are also accepting proposals for
+					full-day tutorials (6 hours). <em>The full conference registration fee will be waived for one organizer per
+						tutorial.</em>
+				</p>
+
+				<h5>Topics</h5>
+				<p>
+					Every year, IC2S2 hosts experts from a variety of fields to collaborate and share knowledge. We are calling for proposals of tutorials that address methods, skills and tools useful to conduct research in computational social science including but not limited to the following topics:
+				</p>
+
+				<ul>
+					<li>Methods and issues of data collection</li>
+					<li>Text mining approaches for social science research</li>
+					<li>Image and video analyses for social science research</li>
+					<li>New advances in social network and behavioral data analysis</li>
+					<li>Application of large language models in CSS research</li>
+					<li>Visual communication and data visualizations</li>
+					<li>Using sensors for studying behavior</li>
+					<li>Combining digital trace data and additional data (e.g., surveys)</li>
+					<li>Assessing biases in data collection</li>
+					<li>Best practices for working with online communities (including crowdsourcing and participants recruitment)</li>
+					<li>Legal and ethical dimensions of CSS research</li>
+					<li>Innovative mixed methods for research on socio-technical systems</li>
+					<li>Reproducibility in CSS research</li>
+					<li>Experimental design and development in CSS</li>
+					<li>Research Design and Causal Inference</li>
+					<li>Generative AI applications in social science research</li>
+					<li>Empirically calibrated simulations for social science research</li>
+					<li>Innovative approaches for integrative modeling that combines prediction and explanation</li>
+					<li>Geospatial data integration and scalable urban analytics</li>
+				</ul>
+
+				<h5>Enquiries</h5>
+				<p>
+					For any questions regarding tutorial submissions, please write to:
+					<a href="mailto:{{ site.emails.general }}">
+						{{ site.emails.general }}
+					</a>
+				</p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section id="highlights" class="wrapper style2">
+	<div class="title">
+		<h6 id="augmented">Past Tutorials</h6>
+		</div>
+		<div class="container">
+		{% for tutorial in site.data.tutorials.past_tutorials %}
+			<div class="row aln-left">
+				<h5>{{ tutorial.title }}</h5>
+			</div>
+			<br />
+			<div class="row aln-left">
+				<div class="col-5 col-12-medium">
+					<h3>Teachers</h3>
+					<ul>
+					{% for tutor in tutorial.tutors %}
+						<li>
+							<strong>{{ tutor.name }}</strong>
+							{% if tutor.affiliation %}, {{ tutor.affiliation }}{%endif %}
+						</li>
+					{% endfor %}
+					</ul>
+				</div>
+				<div class="col-7 col-12-medium">
+					<h3>Description</h3>
+					<p>{{ tutorial.abstract }}</p>
+				</div>
+			</div>
+			<hr>
+		{% endfor %}
+		</div>
+</section>
